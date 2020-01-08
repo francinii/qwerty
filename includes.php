@@ -4,7 +4,7 @@
 <!-- Includes de las funciones -->
 
 <!-- Includes de los estilos del proyecto -->
-<link href="inc/css/estilo.css" rel="stylesheet" type="text/css"/>
+<link href="inc/css/main.css" rel="stylesheet" type="text/css"/>
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta name="descripcion" content="Qwerty Costa Rica"/>	
