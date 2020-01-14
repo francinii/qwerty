@@ -1,7 +1,25 @@
-div{ 
-    div{
-        h1{
-            color: $font_color_dark;
-        }
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.main-container {
+    margin: 0;
+	padding: 0;
+}
+
+.main-screen {
+    background-color: $color_principal;
+    height: 350px;
+}
+
+p {
+    font-family:$font_type;
+}
+
+
+.frame {
+    img {
+        width: 100%;
     }
 }

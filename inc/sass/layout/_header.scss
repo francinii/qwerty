@@ -1,0 +1,16 @@
+.header{
+    background-color: $color_secundary;
+}
+
+.header{
+    ul {
+        li {
+            a {
+                color: $font_color_light;
+            }
+            p {
+                color: $font_color_title;
+            }
+        }
+    }
+}

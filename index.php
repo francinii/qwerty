@@ -15,9 +15,9 @@
 
 <body>
     <?php
-    //include(TEMPLATES_PATH . '/header.php');
+    include(TEMPLATES_PATH . '/header.php');
     include(TEMPLATES_PATH . '/home.php');
-   // include(TEMPLATES_PATH . '/footer.php');
+    include(TEMPLATES_PATH . '/footer.php');
      ?>
 </body>
 

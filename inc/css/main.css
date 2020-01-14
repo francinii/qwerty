@@ -1,5 +1,35 @@
-div div h1 {
-  color: blue;
+.header {
+  background-color: #4B4848;
+}
+
+.header ul li a {
+  color: #fff;
+}
+.header ul li p {
+  color: #1F729E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  margin: 0;
+  padding: 0;
+}
+
+.main-screen {
+  background-color: #1F729E;
+  height: 350px;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.frame img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
