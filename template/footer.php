@@ -1,8 +1,11 @@
 <!-- Footer -->
-<footer class="page-footer font-small stylish-color-dark pt-4">
 
+<footer class="page-footer font-small stylish-color-dark pt-4">
+  <div class="frame_footer">
+    <img src="img/layout/frame_footer.png">
+  </div>
   <!-- Footer Links -->
-  <div class="container text-center text-md-left">
+  <div class="footer_links container-fluid text-center text-md-left">
 
     <!-- Grid row -->
     <div class="row">
@@ -102,11 +105,11 @@
 
   </div>
   <!-- Footer Links -->
-
+  
   <hr>
 
   <!-- Call to action -->
-  <ul class="list-unstyled list-inline text-center py-2">
+  <ul class="call_action list-unstyled list-inline text-center py-2">
     <li class="list-inline-item">
       <h5 class="mb-1"></h5>
     </li>
@@ -149,7 +152,7 @@
   <!-- Social buttons -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Todos los derechos reservados:  <a href="#"> Qwerty Costa Rica</a>
+  <div class="footer-copyright text-center py-3">© 2020 Todos los derechos reservados: <a href="#"> Qwerty Costa Rica</a>
   </div>
   <!-- Copyright -->
 

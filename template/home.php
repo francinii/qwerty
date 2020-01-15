@@ -2,13 +2,13 @@
 <div class="container-fluid main-container">
 
     <!-- Pantalla Inicial -->
-    <div>
-        <div class="main-screen">
+    
+        <div class="row main-screen">
         </div>
-        <div class="frame">
+        <div class="row frame">
             <img src="img/layout/frame1.png">
         </div>
-    </div>
+    
     <!-- Fin de Pantalla Inicial -->
 
 

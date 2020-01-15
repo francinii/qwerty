@@ -9,14 +9,26 @@
   color: #1F729E;
 }
 
-* {
+.frame_footer img {
+  width: 100%;
+}
+
+.footer_links {
+  background-color: #1F729E;
+}
+
+.footer-copyright {
+  background-color: #4B4848;
+}
+
+*, html, body {
   margin: 0;
   padding: 0;
 }
 
 .main-container {
   margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
 .main-screen {
