@@ -1,9 +1,8 @@
 <!-- Footer -->
-
-<footer class="page-footer font-small stylish-color-dark pt-4">
-  <div class="frame_footer">
+<div class="frame_footer">
     <img src="img/layout/frame_footer.png">
   </div>
+<footer class="page-footer font-small stylish-color-dark pt-4">  
   <!-- Footer Links -->
   <div class="footer_links container-fluid text-center text-md-left">
 

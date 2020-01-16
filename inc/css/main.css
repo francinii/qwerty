@@ -13,8 +13,12 @@
   width: 100%;
 }
 
-.footer_links {
+.page-footer {
   background-color: #1F729E;
+  color: #fff;
+}
+.page-footer a {
+  color: #fff;
 }
 
 .footer-copyright {

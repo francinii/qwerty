@@ -1,11 +1,15 @@
-.frame_footer {
+.frame_footer {    
     img {
         width: 100%;
     }
 }
 
-.footer_links{
+.page-footer{
     background-color: $color_principal;
+    color: $font_color_light;
+    a {
+        color: $font_color_light;
+    }
 }
 
 .footer-copyright{
