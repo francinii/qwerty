@@ -8,4 +8,8 @@ $vocab["menu_servicios"]         = "Servicios";
 $vocab["menu_portafolio"]         = "Portafolio";
 
 
+//************ Titulos
+$vocab["titulo_clientes"] = "Clientes";
+
+
 

@@ -19,6 +19,15 @@
     include(TEMPLATES_PATH . '/home.php');
     include(TEMPLATES_PATH . '/footer.php');
      ?>
+ 
+
+<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src="inc/js/carousel.js" type="text/javascript"></script>
+
+
+
 </body>
 
 </html>
