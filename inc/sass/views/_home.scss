@@ -27,6 +27,7 @@ h2 {
 }
 
 .frame {
+  padding: 0;
     img {
         width: 100%;
     }
@@ -94,21 +95,46 @@ body {
   color: #ddd;
 }
 
-
-
-.section_client{
-  text-align: center;
+.section_client_title{
+    text-align: center; 
+    padding: 2% 0% 2% 0%;   
   h2{
     color: $font_color_title;
     margin: 0 auto;
   }
 }
 
+.section_client{
+  padding: 2% 0% 10% 0%;  
+}
+
 .circulo {
   width: 100px;
-  height: 100px;
+  height: 100px;  
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #5cb85c;
+  background: $color_principal;
 }
+
+
+.informacion-circulo{
+  padding: 0px 10% 0px 0% ;
+}
+
+.section-circles{
+  padding: 10% 0% 10% 0% ;
+}
+
+.section_developer{
+  padding: 20% 0% 20% 0% ;
+  background: $color_background;
+}
+
+
+.section_benefits{
+  background: $color_principal;
+  width: 100%;;
+  height: 1050px;
+}
+

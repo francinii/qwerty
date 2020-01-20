@@ -11,23 +11,34 @@
     <!-- Fin de Pantalla Inicial -->
 
     <!-- INICIO DEL HOME -->
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 ">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 ">
+    <div class="row section-circles">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 ">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 "> hola </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 "> hola</div>
-                <div class="col-xs-12 col-sm-12 col-md-4 "> hola</div>
+                <div class="col-xs-12 col-sm-12 col-md-4  ">
+                    <div class="circulo"></div>
+                    <div class="informacion-circulo">
+                        <p>Esto es informacion de lekjlqk daf</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4  ">
+                    <div class="circulo"></div>
+                    <div class="informacion-circulo">
+                        <p>Esto es informacion de lekjlqk daf</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4  ">
+                    <div class="circulo"></div>
+                    <div class="informacion-circulo">
+                        <p>Esto es informacion de lekjlqk daf</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3">
         </div>
     </div>
     <!-- FIN DEL HOME -->
 
-    <!-- Qué hacemos -->
-    <div class="row section_description">
+    <!-- Qué Hacemos -->
+    <div class="row section_developer">
         <div class="col-xs-12 col-sm-12 col-md-4 ">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 ">
@@ -44,14 +55,14 @@
 
 
     <!-- Inicio Clientes -->
-    <div class="row section_client">
+    <div class="row section_client_title">
         <div class="col-md-12">
             <h2>
-                <?= $vocab["titulo_clientes"] ?>                
+                <?= $vocab["titulo_clientes"] ?>
             </h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row section_client">
         <div class="col-md-8 col-md-offset-2 ">
             <div class="carousel slide multi-item-carousel" id="theCarousel">
                 <div class="carousel-inner">
@@ -61,7 +72,6 @@
                                 <img src="img/content/cliente1" class="img-responsive">
                             </a>
                         </div>
-
                     </div>
                     <div class="item">
                         <div class="col-xs-4">
@@ -117,5 +127,19 @@
         </div>
     </div>
     <!-- FIN Clientes -->
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 frame">
+            <img src="img/layout/frame2.png">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 section_benefits">
+            hola
+        </div>
+    </div>
+
+    <div class="row section_portafolio">
+
+    </div>
 
 </div>
