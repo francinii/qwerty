@@ -129,6 +129,15 @@ body {
   background: #1F729E;
 }
 
+.circuloDos {
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #cbcbcb;
+}
+
 .informacion-circulo {
   padding: 0px 10% 0px 0%;
 }
@@ -145,7 +154,21 @@ body {
 .section_benefits {
   background: #1F729E;
   width: 100%;
-  height: 1050px;
+  height: auto;
+}
+
+.section_idear {
+  background: #FBFBFB;
+  height: 900px;
+}
+
+.contendorCirculos {
+  top: -35%;
+}
+
+.section_portafolio {
+  height: 400px;
+  padding-top: 8%;
 }
 
 /*# sourceMappingURL=main.css.map */
