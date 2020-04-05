@@ -16,7 +16,8 @@
       if( $nombrePagina == 'inicio'){
          include(SECTIONS_PATH. '/header.php'); 
       }
-      include(SECTIONS_PATH. '/description.php');  
+      include(SECTIONS_PATH. '/description.php'); 
+       
       if( $nombrePagina == 'inicio' || $nombrePagina == 'acerca'){
          include(SECTIONS_PATH. '/about.php'); 
       }
