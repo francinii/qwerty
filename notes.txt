@@ -1,0 +1,3 @@
+Compilar sass
+sass --watch resources\sass:resources\css
+

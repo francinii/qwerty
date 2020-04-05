@@ -1,8 +1,8 @@
 <!-- Footer -->
-<div class="frame_footer">
-    <img src="img/layout/frame_footer.png">
+<div class="frame_footer row">
+    <img src="<?php echo SERVERURL?>img/layout/frame_footer.png">
   </div>
-<footer class="page-footer font-small stylish-color-dark pt-4">  
+<footer class="page-footer font-small stylish-color-dark pt-4 row">  
   <!-- Footer Links -->
   <div class="footer_links container-fluid text-center text-md-left">
 
