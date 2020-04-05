@@ -12,42 +12,42 @@
                     <div class="item active">
                         <div class="col-xs-4">
                             <a href="http://www.desamarcr.com/">
-                                <img src="<?php echo SERVERURL?>img/content/cliente1" class="img-responsive">
+                                <img src="<?php echo SERVER_URL?>img/content/cliente1" class="img-responsive">
                             </a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="col-xs-4">
                             <a href="https://www.ubrauliocarrillocr.com/">
-                                <img src="<?php echo SERVERURL?>img/content/cliente2" class="img-responsive">
+                                <img src="<?php echo SERVER_URL?>img/content/cliente2" class="img-responsive">
                             </a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="col-xs-4">
                             <a href="https://www.ubrauliocarrillocr.com/">
-                                <img src="<?php echo SERVERURL?>img/content/cliente2" class="img-responsive">
+                                <img src="<?php echo SERVER_URL?>img/content/cliente2" class="img-responsive">
                             </a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="col-xs-4">
                             <a href="https://www.ubrauliocarrillocr.com/">
-                                <img src="<?php echo SERVERURL?>img/content/cliente2" class="img-responsive">
+                                <img src="<?php echo SERVER_URL?>img/content/cliente2" class="img-responsive">
                             </a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="col-xs-4">
                             <a href="https://www.ubrauliocarrillocr.com/">
-                                <img src="<?php echo SERVERURL?>img/content/cliente2" class="img-responsive">
+                                <img src="<?php echo SERVER_URL?>img/content/cliente2" class="img-responsive">
                             </a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="col-xs-4">
                             <a href="https://www.ubrauliocarrillocr.com/">
-                                <img src="<?php echo SERVERURL?>img/content/cliente2" class="img-responsive">
+                                <img src="<?php echo SERVER_URL?>img/content/cliente2" class="img-responsive">
                             </a>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                     <div class="item">
                         <div class="col-xs-4">
                             <a href="https://www.ubrauliocarrillocr.com/">
-                                <img src="<?php echo SERVERURL?>img/content/cliente2" class="img-responsive">
+                                <img src="<?php echo SERVER_URL?>img/content/cliente2" class="img-responsive">
                             </a>
                         </div>
                     </div>
