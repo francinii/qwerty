@@ -4,7 +4,7 @@
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 <link href="<?php echo SERVERURL?>resources/css/main.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/ico" href="<?php echo SERVERURL?>favicon.ico">
-
+<link href="<?php echo SERVERURL?>resources/css/lineaTiempo.css" rel="stylesheet" type="text/css"/>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta name="descripcion" content="Qwerty Costa Rica"/>	
 <meta name="keywords" content="Qwerty"/>
