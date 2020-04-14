@@ -1,18 +1,40 @@
+.conocer_proyecto{
+    background-color: $color_principal;
+    padding: 5%;
+    
+    h2{
+        color: $font_color_light;
+    }
+}
+
 .frame_footer {    
     img {
         width: 100%;
     }
 }
 
+
 .page-footer{
-    background-color: $color_principal;
-    color: $font_color_light;
+    background-color: $color_dark;
+    color: $font_color_light;    
     a {
         color: $font_color_light;
+    }   
+    p{
+        color: $font_color_light;
+    }   
+    
+    .footer-body{
+        background-color: $color_dark_light;
     }
-   
+
+    h5{
+        color: $font_color_title;
+    }
 }
 
 .footer-copyright{
-    background-color: $color_secundary;
+    background-color: $color_dark;
 }
+
+

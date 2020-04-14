@@ -13,7 +13,7 @@ $vocab["menu_portafolio"]         = "Portafolio";
 $vocab["menu_clientes"]         = "Clientes";
 
 //************ Titulos
-$vocab["titulo_clientes"] = "Clientes";
+$vocab["titulo_clientes"] = "Nuestros Clientes";
 
 
 

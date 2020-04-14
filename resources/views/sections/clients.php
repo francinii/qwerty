@@ -1,8 +1,25 @@
+<div class="row " style="margin: 15% 0 15% 0">                   
+    <div class="col-md-4 col-xs-10 col-sm-10 mx-auto">
+        <img class="img-fluid" src="<?php echo SERVER_URL?>img/content/logo2.webp" alt="">
+    </div>          
+    <div class="col-md-5 col-xs-10 col-sm-10 mx-auto">            
+        <h2> <?= $vocab["titulo_clientes"] ?></h2>
+        <h3> </h3>
+        <p>
+            Procuramos satisfacer las necesidades de nuestros
+            clientes brindándoles servicios de calidad acorde 
+            a las necesidades de sus negocios.                
+        </p>
+        <p>
+            Mantenemos una comunicación directa con los stakeholders
+            durante todo el proceso de desarrollo.                
+        </p>
+    </div>                        
+</div>
 <div class="row section_client_title">
         <div class="col-md-12">
-            <h2>
-                <?= $vocab["titulo_clientes"] ?>
-            </h2>
+        <h2>Conocé algunos de nuestros clientes satisfechos</h2>
+            <h3> </h3> 
         </div>
     </div>
     <div class="row section_client">
