@@ -9,3 +9,6 @@
 <meta name="descripcion" content="Qwerty Costa Rica"/>	
 <meta name="keywords" content="Qwerty"/>
 <meta name="keywords" content="">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 

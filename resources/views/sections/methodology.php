@@ -1,55 +1,51 @@
 <div class="row"> 
     <div class="col-md-12 frame">
-        <img src="img/layout/frame_bottom.svg">        
+        <img src="<?= $routes["img_layout_frame_4"]?>">        
     </div>
 </div>
 <div class="row methodology-container "> 
     <div class="col-md-offset-1 col-md-10 ">     
-    <section class="intro">
-    <div class="container">
-        <h1>Metodología de trabajo</h1>
-    </div>
-    </section>
-    <section class="timeline">
-        <ul>
-            <li>
-           
-            <div>         
-            <img src="img/content/developer.svg"> 
-                <time>Ideamos</time>    
-               Agrupamos tus ideas y las transformamos en una lista de
-               requerimientos acorde a las necesidades de tu negocio.
+        <section class="intro">
+            <div class="container">
+                <h1><?= $vocab["metodologia_titulo"] ?></h1>
             </div>
-            </li>
-            <li>
-            <div>
-            <img src="img/content/developer.svg"> 
-                <time>Prototipamos</time>
-                Creamos un prototipo visual de tu idea de negocio ya
-                sea una página, comercio electrónico o aplicación web,
-                móvil o de escritorio.
-            </div>
-            </li>
-            <li>
-            <div>
-            <img src="img/content/developer.svg"> 
-                <time>Desarrollamos</time> 
-                Materializamos tu idea en un producto de calidad.
-               </div>
-            </li>
-            <li>
-            <div>
-            <img src="img/content/developer.svg"> 
-                <time>Implementamos</time>
-                Tu producto listo para usarse.
-               </div>
-            </li>        
-        </ul>
-    </section>
+        </section>
+        <section class="timeline">
+            <ul>
+                <li>           
+                    <div>         
+                        <img src="<?= $routes["img_content_developer"]?>"> 
+                        <time><?= $vocab["metodologia_titulo_1"]  ?></time>    
+                        <?= $vocab["metodologia_texto_1"]  ?>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="<?= $routes["img_content_developer"]?>"> 
+                        <time><?= $vocab["metodologia_titulo_2"] ?></time>
+                        <?= $vocab["metodologia_texto_2"]  ?>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="<?= $routes["img_content_developer"]?>"> 
+                        <time><?= $vocab["metodologia_titulo_3"]  ?></time> 
+                        <?= $vocab["metodologia_texto_3"]  ?>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="<?= $routes["img_content_developer"]?>"> 
+                        <time><?= $vocab["metodologia_titulo_4"]  ?></time>
+                        <?= $vocab["metodologia_texto_4"]  ?>
+                    </div>
+                </li>        
+            </ul>
+        </section>
     </div> 
 </div>
 <div class="row"> 
     <div class="col-md-12 frame">
-        <img src="img/layout/frame_bottom_2.svg">        
+        <img src="<?=$routes["img_layout_frame_5"]?>">        
     </div>
 </div>

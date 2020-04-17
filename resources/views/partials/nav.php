@@ -13,7 +13,6 @@
         <!-- <img id="imgNavBar" src="../desamar/img/logo.png" height="50px">-->        
         <li class="nav-item"> <a href="<?php echo SERVER_URL?>acerca">  <?= $vocab["menu_acerca_de"] ?> &nbsp;   </a>  </li>        
         <li class="nav-item"> <a href="<?php echo SERVER_URL?>servicios"> <?= $vocab["menu_servicios"] ?> &nbsp;  </a>   </li>
-        <li class="nav-item"> <a href="<?php echo SERVER_URL?>portafolio"> <?= $vocab["menu_portafolio"] ?> &nbsp;  </a></li>
         <li class="nav-item"> <a href="<?php echo SERVER_URL?>clientes"> <?= $vocab["menu_clientes"] ?> &nbsp;  </a></li>
         <li class="nav-item"> <a href="<?php echo SERVER_URL?>contacto"> <?= $vocab["menu_contactenos"] ?> &nbsp;  </a></li>
       </ul> 

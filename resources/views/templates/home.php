@@ -10,45 +10,35 @@
       }else{ 
           $nombrePagina = 'inicio';
          // var_dump($pagina);
-      };
-     
-      include(PARTIALS_PATH. '/nav.php');      
+      };     
+      include($routes["seccion_nav"]);      
       //Agregando una seccion de encabezado
       if( $nombrePagina == 'inicio'){         
-         include(SECTIONS_PATH. '/header.php'); 
+         include($routes["seccion_header"] ); 
+         include($routes["seccion_descripcion"] );
       }else {
-          include(SECTIONS_PATH. '/header_section.php'); 
+          include($routes["seccion_header_section"] ); 
       }
-      //Agregando la seccion de acerca de la empresa
-      if(  $nombrePagina == 'inicio' || $nombrePagina == 'acerca'){         
-         include(SECTIONS_PATH. '/description.php');
+      if( $nombrePagina == 'acerca'){         
+        // include(SECTIONS_PATH. '/description.php');
+         include($routes["seccion_acerca"]);
       }      
        //Agregando la seccion de servicios de la empresa
       if( $nombrePagina == 'inicio' || $nombrePagina == 'servicios'){          
-         include(SECTIONS_PATH. '/services.php'); 
+         include($routes["seccion_servicios"]); 
       }
       //Agregando la seccion de acerca de la empresa
       if( $nombrePagina == 'inicio' ){          
-         include(SECTIONS_PATH. '/methodology.php');  
+         include($routes["seccion_metodologia"]);  
       }
-
-     // if( $nombrePagina == 'inicio' || $nombrePagina == 'acerca'){
-        // include(SECTIONS_PATH. '/about.php'); 
-     // }
-      
       if( $nombrePagina == 'inicio' || $nombrePagina == 'clientes'){         
-         include(SECTIONS_PATH. '/clients.php');  
-      }      
-
-      if( $nombrePagina == 'inicio' || $nombrePagina == 'portafolio'){     
-        //  include(SECTIONS_PATH. '/portafolio.php');  
-      }    
+         include($routes["seccion_clientes"]);  
+      }           
       if($nombrePagina == 'contacto'){     
-           include(SECTIONS_PATH. '/contact.php');  
-       } 
+           include($routes["seccion_contacto"]);  
+       }      
        
-       
-      include(PARTIALS_PATH. '/footer.php');
+      include($routes["seccion_footer"]);
   
    ?>   
 </div>

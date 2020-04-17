@@ -205,7 +205,15 @@ body {
   //margin-left: -5px;
 }
 
-
+.bg-principal {
+  background-color: $color_principal;
+  p {
+    color: $font_color_light;
+  }
+  h2 {
+    color: $font_color_light;
+  } 
+}
 
 
 /* Landscape phone to portrait tablet */

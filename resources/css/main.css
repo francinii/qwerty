@@ -222,6 +222,16 @@ body {
   width: 110px;
 }
 
+.bg-principal {
+  background-color: #24A6EC;
+}
+.bg-principal p {
+  color: #fff;
+}
+.bg-principal h2 {
+  color: #fff;
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   nav .menu_collapsed {
