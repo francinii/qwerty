@@ -6,17 +6,21 @@
         <title>Qwerty</title>
         <?php 
             include('config.php');
-            include('includes.php'); 
-           
+            include('includes.php');            
         ?>
+        
+        <link href="<?php echo SERVER_URL?>/resources/css/animate.css" rel="stylesheet" type="text/css"/>
+  
     </head>
-    <body>    
-        <?php include(TEMPLATES_PATH. '/home.php'); ?>    
-        <script src="<?php echo SERVER_URL?>lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-        <script src="<?php echo SERVER_URL?>resources/js/carousel.js" type="text/javascript"></script>
-        <script src="<?php echo SERVER_URL?>resources/js/timeline.js" type="text/javascript"></script>
-   
+    <body>  
+    
+        <?php include($routes["pagina_home"]); ?>    
+        <script src="<?= $routes["js_bootstrap_local"] ?>" type="text/javascript"></script>
+        <script src='<?= $routes["js_jquery"] ?>'></script>
+        <script src='<?= $routes["js_bootstrap"] ?>'></script>
+        <script src="<?= $routes["js_carousel"] ?>" type="text/javascript"></script>
+        <script src="<?= $routes["js_timeline"] ?>" type="text/javascript"></script> 
+        
+ 
     </body>
 </html>

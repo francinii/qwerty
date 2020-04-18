@@ -109,5 +109,16 @@ $vocab["servicio_titulo_4"]  = "Desarrollo de aplicaciones móviles.";
 //***************************** Seccion Footer *********************************//
 
 $vocab["footer_titulo"]  = "¡Queremos materializar tu proyecto! ";
-$vocab["footer_facebook"]  = "¡Seguinos en Facebook! ";
+$vocab["footer_facebook"]  = "¡Seguínos en Facebook! ";
 $vocab["footer_derechos"]  = " © 2020 Todos los derechos reservados.Qwerty Costa Rica ";
+
+
+
+//***************************** Palabras claves *********************************//
+$vocab["keyword_1"]  = "Qwerty";
+$vocab["keyword_2"]  = "Qwerty Costa Rica";
+$vocab["keyword_3"]  = "Pagina web";
+$vocab["keyword_4"]  = "Desarrollo de software";
+$vocab["keyword_5"]  = "Sotware";
+$vocab["keyword_6"]  = "Aplicaciones web";
+$vocab["keyword_7"]  = "Aplicaciones moviles";

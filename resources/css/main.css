@@ -98,11 +98,19 @@ p {
 }
 
 .section_description {
-  padding: 10% 0px 0px 0px;
+  padding: 0% 0px 0px 0px;
 }
 
 .section_clients {
-  padding: 60px 0px 0px 0px;
+  padding: 10% 0 4% 0;
+}
+
+.section_about {
+  padding: 6% 0 6% 0;
+}
+
+.section_contact {
+  padding: 8% 0 0% 0;
 }
 
 .frame_header {
@@ -232,6 +240,7 @@ body {
   color: #fff;
 }
 
+/*Para las animaciones*/
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   nav .menu_collapsed {

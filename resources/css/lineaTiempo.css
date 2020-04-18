@@ -135,6 +135,7 @@ time {
   transition: all .5s ease-in-out;
 }
 
+
 .timeline ul li:nth-child(odd) div {
   transform: translate3d(200px, 0, 0);
 }
@@ -149,6 +150,18 @@ time {
   opacity: 1;
 }
 
+
+
+.element-fade-in, .element-zoom-in, .element-fade-left, .element-fade-right{
+  visibility: hidden;
+  opacity: 0;  
+}
+
+.in-view {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -180,3 +193,7 @@ time {
   }
 }
 
+
+
+
+	
