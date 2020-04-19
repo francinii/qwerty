@@ -7,7 +7,7 @@
 <footer class="page-footer font-small stylish-color-dark row">
     <div class= "conocer_proyecto col-md-12 text-center ">
           <h2 class="element-fade-in"><?= $vocab["footer_titulo"] ?></h2>  
-          <button class="btn btn-warning btn-lg element-fade-in"> <?= $vocab["contacto_titulo"] ?></button> 
+          <a href = "<?= $routes["pagina_contacto"] ?>"class="btn btn-warning btn-lg element-fade-in"> <?= $vocab["contacto_titulo"] ?></a> 
     </div>   
     <div class="footer-body col-md-12">
       <div class="row">

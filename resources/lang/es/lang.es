@@ -56,6 +56,19 @@ $vocab["acerca_valor_4"]  = "Trabajo en equipo";
 $vocab["acerca_valor_5"]  = "Innovación";
 
 
+$vocab["acerca_valor_texto_1"]  = "  Orientamos nuestros esfuerzos para
+                                          alcanzar la satisfacción de nuestros clientes 
+                                          y el cumplimiento de sus objetivos en el ámbito de 
+                                          las tecnologías de información..";
+
+$vocab["acerca_valor_texto_2"]  = "  Procuramos innovar y hacer uso de la creatividad
+                                          de nuestros colaboradores en la creación de soluciones
+                                          que se adapten a las necesidades de nuestros clientes.";
+$vocab["acerca_valor_texto_3"]  = " Contamos con un equipo altamente capacitado 
+                                         y comprometido con los proyectos de nuestros clientes.";
+$vocab["acerca_valor_texto_4"]  = " Buscamos formas diferentes y creativas
+                                           para alcanzar nuestros objetivos de desarrollo.";
+
 //***************************** Seccion Clientes *********************************//
 
 $vocab["clientes_titulo"]  = "Nuestros Clientes";
@@ -94,6 +107,7 @@ $vocab["metodologia_titulo_3"]  = "Desarrollamos";
 $vocab["metodologia_texto_3"]  = "Materializamos tu idea en un producto de calidad.";
 $vocab["metodologia_titulo_4"]  = "Implementamos";
 $vocab["metodologia_texto_4"]  = " Tu producto listo para usarse.";
+
 
 
 //***************************** Seccion Servicios *********************************//

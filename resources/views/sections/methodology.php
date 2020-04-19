@@ -14,28 +14,28 @@
             <ul>
                 <li>           
                     <div>         
-                        <img src="<?= $routes["img_content_developer"]?>"> 
+                        <img src="<?= $routes["img_content_idear"]?>"> 
                         <time><?= $vocab["metodologia_titulo_1"]  ?></time>    
                         <?= $vocab["metodologia_texto_1"]  ?>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="<?= $routes["img_content_developer"]?>"> 
+                        <img src="<?= $routes["img_content_prototipar"]?>"> 
                         <time><?= $vocab["metodologia_titulo_2"] ?></time>
                         <?= $vocab["metodologia_texto_2"]  ?>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="<?= $routes["img_content_developer"]?>"> 
+                        <img src="<?= $routes["img_content_crear"]?>"> 
                         <time><?= $vocab["metodologia_titulo_3"]  ?></time> 
                         <?= $vocab["metodologia_texto_3"]  ?>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="<?= $routes["img_content_developer"]?>"> 
+                        <img src="<?= $routes["img_content_implementar"]?>"> 
                         <time><?= $vocab["metodologia_titulo_4"]  ?></time>
                         <?= $vocab["metodologia_texto_4"]  ?>
                     </div>

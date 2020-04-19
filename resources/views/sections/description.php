@@ -8,7 +8,7 @@
             <h2  ><?= $vocab["descripcion_titulo"] ?></h2>
             <h3 ><?= $vocab["descripcion_subtitulo"] ?> </h3>
             <p  ><?= $vocab["descripcion_texto"] ?>  </p>
-            <button class="btn btn-info"><?= $vocab["descripcion_conozcanos"] ?>  </button>
+            <a href = "<?= $routes["pagina_acerca"] ?>" class="btn btn-info"><?= $vocab["descripcion_conozcanos"] ?>  </a>
         </div>                        
 </div>
 

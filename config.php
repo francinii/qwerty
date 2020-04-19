@@ -41,6 +41,17 @@ $routes["img_content_facebook"] =  SERVER_URL . '/img/content/facebook.svg';
 $routes["img_content_cliente_1"] =  SERVER_URL . '/img/content/cliente1';
 $routes["img_content_cliente_2"] =  SERVER_URL . '/img/content/cliente2';
 $routes["img_content_cliente_3"] =  SERVER_URL . '/img/content/cliente1';
+$routes["img_content_idear"] =  SERVER_URL . '/img/content/idear.webp';
+$routes["img_content_prototipar"] =  SERVER_URL . '/img/content/prototipar.webp';
+$routes["img_content_crear"] =  SERVER_URL . '/img/content/crear.webp';
+$routes["img_content_implementar"] =  SERVER_URL . '/img/content/implementar.webp';
+
+$routes["img_content_compromiso"] =  SERVER_URL . '/img/content/compromiso.webp';
+$routes["img_content_confianza"] =  SERVER_URL . '/img/content/confianza.webp';
+$routes["img_content_creatividad"] =  SERVER_URL . '/img/content/creatividad.webp';
+$routes["img_content_innovacion"] =  SERVER_URL . '/img/content/innovacion.webp';
+
+
 $routes["img_layout_frame_1"] =  SERVER_URL . '/img/layout/header_section.svg';
 $routes["img_layout_frame_2"] =  SERVER_URL . '/img/layout/header.svg';
 $routes["img_layout_frame_3"] =  SERVER_URL . '/img/layout/frame3.svg';
