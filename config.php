@@ -16,6 +16,7 @@ $routes["pagina_servicios"] = SERVER_URL . '/servicios';
 $routes["pagina_contacto"] = SERVER_URL . '/contacto';
 $routes["pagina_home"] = TEMPLATES_PATH. '/home.php';
 
+
 $routes["seccion_metodologia"] = SECTIONS_PATH. '/methodology.php';
 $routes["seccion_acerca"] = SECTIONS_PATH. '/about.php';
 $routes["seccion_clientes"] = SECTIONS_PATH. '/clients.php';
@@ -50,7 +51,7 @@ $routes["img_content_compromiso"] =  SERVER_URL . '/img/content/compromiso.webp'
 $routes["img_content_confianza"] =  SERVER_URL . '/img/content/confianza.webp';
 $routes["img_content_creatividad"] =  SERVER_URL . '/img/content/creatividad.webp';
 $routes["img_content_innovacion"] =  SERVER_URL . '/img/content/innovacion.webp';
-
+$routes["img_content_error"] = SERVER_URL . '/img/content/error.svg';
 
 $routes["img_layout_frame_1"] =  SERVER_URL . '/img/layout/header_section.svg';
 $routes["img_layout_frame_2"] =  SERVER_URL . '/img/layout/header.svg';

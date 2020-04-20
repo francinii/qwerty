@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -7,10 +6,8 @@
         <?php 
             include('config.php');
             include('includes.php');            
-        ?>
-        
-        <link href="<?php echo SERVER_URL?>/resources/css/animate.css" rel="stylesheet" type="text/css"/>
-  
+        ?>        
+    <link href="<?php echo SERVER_URL?>/resources/css/animate.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>  
     

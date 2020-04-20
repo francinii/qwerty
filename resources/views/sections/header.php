@@ -1,8 +1,8 @@
 
 <div class="row"> 
     <div class="col-md-12 frame frame_header">
-       <img src="<?= $routes["img_layout_frame_2"] ?>">
-        <div class="anim">
+      <img src="<?= $routes["img_layout_frame_2"] ?>">
+      <div class="anim">
         <h1 class="TiutloA">QWERTY</h1>
         <div class="ContAnimacion">
             <h2
@@ -12,12 +12,49 @@
             </h2>
         </div>           
             <h2>Programando el futuro.</h2>
-        </div>
+      </div>
     </div>
+    <div class="img_header">
+      <img class="floating" src="img/content/compu.webp"   style="" > 
+    </div>
+      
 </div>
 
 
 <style>
+.img_header{ 
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+
+.floating {  
+  height: 450px;
+   width: 450px;
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {		
+		transform: translatey(0px);
+	}
+	50% {	
+		transform: translatey(-20px);
+	}
+	100% {		
+		transform: translatey(0px);
+	}   
+}
+
+
+
+
+
 
 .TiutloA{
     font-size: 5.5rem;
