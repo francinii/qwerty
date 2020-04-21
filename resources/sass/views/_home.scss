@@ -1,9 +1,13 @@
-*, html, body{
+*, html, body, .container-fluid{
 	margin: 0;
   padding: 0;
   font-size: 1rem;
   font-family:$font_type;
   line-height : 30px;
+  
+}
+.row{
+  margin:0;
 }
 
 h1 {
@@ -60,6 +64,7 @@ p{
 .section_description{
   padding: 0% 0px 0px 0px;
 }
+
 
 .section_clients {
     padding: 10% 0 4% 0;

@@ -1,15 +1,11 @@
 <!-- Contenido HOME -->
- 
-
 <div class="container-fluid">
    <?php
      if(isset($_GET['pagina'])){
         $pagina = explode('/', $_GET['pagina']);
-        $nombrePagina = $pagina[0];
-       //var_dump($pagina);
+        $nombrePagina = $pagina[0];  
       }else{ 
-          $nombrePagina = 'inicio';
-         // var_dump($pagina);
+          $nombrePagina = 'inicio';      
       };     
       include($routes["seccion_nav"]);      
       //Agregando una seccion de encabezado
@@ -36,7 +32,7 @@
       }           
       if($nombrePagina == 'contacto'){     
            include($routes["seccion_contacto"]);  
-       }      
+       }    
        
       include($routes["seccion_footer"]);
   

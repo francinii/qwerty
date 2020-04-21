@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="<?=$routes["pagina_inicio"]?> ">
       <img src="<?=$routes["img_content_logo_2"]?> " width="100" height="30" class="d-inline-block align-top" alt="">
     </a>  
-  <!-- Toggler/collapsibe Button -->
+ 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
       <span class="navbar-toggler-icon"></span>
     </button>   

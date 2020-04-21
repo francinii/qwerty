@@ -53,8 +53,15 @@ $routes["img_content_creatividad"] =  SERVER_URL . '/img/content/creatividad.web
 $routes["img_content_innovacion"] =  SERVER_URL . '/img/content/innovacion.webp';
 $routes["img_content_error"] = SERVER_URL . '/img/content/error.svg';
 
+
+$routes["img_content_screen1"] = SERVER_URL . '/img/content/screen1.webp';
+$routes["img_content_screen2"] = SERVER_URL . '/img/content/screen2.webp';
+$routes["img_content_screen3"] = SERVER_URL . '/img/content/screen3.webp';
+$routes["img_content_screen4"] = SERVER_URL . '/img/content/screen4.webp';
+$routes["img_content_screen5"] = SERVER_URL . '/img/content/screen5.webp';
+
 $routes["img_layout_frame_1"] =  SERVER_URL . '/img/layout/header_section.svg';
-$routes["img_layout_frame_2"] =  SERVER_URL . '/img/layout/header.svg';
+$routes["img_layout_frame_2"] =  SERVER_URL . '/img/layout/header.png';
 $routes["img_layout_frame_3"] =  SERVER_URL . '/img/layout/frame3.svg';
 $routes["img_layout_frame_4"] =  SERVER_URL . '/img/layout/frame_bottom.svg';
 $routes["img_layout_frame_5"] =  SERVER_URL . '/img/layout/frame_bottom_2.svg';
