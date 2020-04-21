@@ -244,6 +244,53 @@ body {
   color: #fff;
 }
 
+.img_header {
+  position: absolute;
+  top: 15%;
+  right: 12%;
+  width: 370px;
+}
+
+.anim {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.anim h1 {
+  font-size: 4.5rem;
+  text-align: left;
+}
+.anim h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  color: white;
+}
+.anim p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.floating {
+  position: absolute;
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 /*Para las animaciones*/
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -254,6 +301,29 @@ body {
     float: right !important;
   }
 }
+@media (max-width: 690px) {
+  #portada_expandida {
+    display: none;
+  }
+
+  #portada_reducida {
+    display: block !important;
+    height: 630px;
+    padding: 5%;
+    background-color: #24A6EC;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+  #portada_reducida .content {
+    padding: 15% 0% 15% 0%;
+  }
+  #portada_reducida h1, #portada_reducida h2, #portada_reducida p {
+    color: white;
+  }
+  #portada_reducida .img_reducida img {
+    width: 150px;
+  }
+}
 /* Landscape phones and down */
 @media (max-width: 480px) {
   nav .menu_collapsed {
@@ -261,6 +331,11 @@ body {
   }
   nav .menu_collapsed button {
     float: right !important;
+  }
+}
+@media (max-width: 900px) {
+  .img_header {
+    width: 280px;
   }
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
