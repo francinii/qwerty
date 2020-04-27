@@ -51,7 +51,7 @@
 }
 
 .row {
-  margin: 0;
+  margin-right: 0;
 }
 
 h1 {
@@ -102,7 +102,7 @@ p {
 }
 
 .section_description {
-  padding: 0% 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .section_clients {
@@ -135,6 +135,9 @@ p {
 
 .multi-item-carousel .carousel-inner > .item {
   transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner > .item a img {
+  width: 200px;
 }
 .multi-item-carousel .carousel-inner .active.left {
   left: -33%;
@@ -266,7 +269,7 @@ body {
   color: white;
 }
 .anim p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
 }
 
@@ -291,6 +294,13 @@ body {
     transform: translatey(0px);
   }
 }
+.section-title {
+  padding-bottom: 4%;
+}
+.section-title h2 {
+  font-size: 2rem;
+}
+
 /*Para las animaciones*/
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -332,6 +342,11 @@ body {
   nav .menu_collapsed button {
     float: right !important;
   }
+
+  .section_description {
+    text-align: center;
+    padding: 4%;
+  }
 }
 @media (max-width: 900px) {
   .img_header {
@@ -347,12 +362,6 @@ body {
     -webkit-transform: none !important;
     transform: none !important;
   }
-}
-.section-title {
-  padding-bottom: 4%;
-}
-.section-title h2 {
-  font-size: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

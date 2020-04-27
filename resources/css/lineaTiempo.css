@@ -150,8 +150,6 @@ time {
   opacity: 1;
 }
 
-
-
 .element-fade-in, .element-zoom-in, .element-fade-left, .element-fade-right{
   visibility: hidden;
   opacity: 0;  

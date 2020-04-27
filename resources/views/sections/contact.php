@@ -17,7 +17,7 @@
           </li>               
           <li>
             <a><img src="<?= $routes["img_content_telefono"]?>"> 
-                <?= $vocab["contacto_correo"] ?>
+                <?= $vocab["contacto_numero"] ?>
             </a>
           </li>            
         </ul>       

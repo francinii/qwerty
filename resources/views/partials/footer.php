@@ -11,7 +11,7 @@
     </div>   
     <div class="footer-body col-md-12">
       <div class="row">
-        <div class="footer-col col-md-5 mx-auto">
+        <div class="footer-col col-md-5 mx-1">
           
           <ul class="list-unstyled">
             <li style="padding: 5% 0 3% 0">
@@ -92,7 +92,7 @@ if (isset($_POST['nombre']) && isset($_POST['mensaje']) && isset($_POST['correo'
     $contenidoformulario .= "Correo: ". $correo."\n";
     $contenidoformulario .= "Mensaje: \n". $mensaje."\n";
     mail($destinatario,$nombre,$contenidoformulario);
-    }
+}
 
 ?>
 

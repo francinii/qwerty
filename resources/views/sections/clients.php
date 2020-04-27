@@ -36,21 +36,21 @@
                 <div class="item">
                     <div class="col-xs-4">
                         <a href="<?=$routes["link_cliente_3"]?>">
-                            <img src="<?= $routes["img_content_cliente_1"]?>" class="img-responsive">
+                            <img src="<?= $routes["img_content_cliente_3"]?>" class="img-responsive">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
                         <a href="<?=$routes["link_cliente_4"]?>">
-                            <img src="<?= $routes["img_content_cliente_2"]?>" class="img-responsive">
+                            <img src="<?= $routes["img_content_cliente_4"]?>" class="img-responsive">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
                         <a href="<?=$routes["link_cliente_5"]?>">
-                            <img src="<?= $routes["img_content_cliente_1"]?>" class="img-responsive">
+                            <img src="<?= $routes["img_content_cliente_5"]?>" class="img-responsive">
                         </a>
                     </div>
                 </div>

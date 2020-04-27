@@ -3,11 +3,12 @@
   padding: 0;
   font-size: 1rem;
   font-family:$font_type;
-  line-height : 30px;
-  
+  line-height : 30px;  
 }
+
 .row{
-  margin:0;
+ // margin-left:0;
+  margin-right:0;
 }
 
 h1 {
@@ -62,9 +63,8 @@ p{
 }
 
 .section_description{
-  padding: 0% 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
-
 
 .section_clients {
     padding: 10% 0 4% 0;
@@ -73,11 +73,10 @@ p{
 .section_about{
   padding: 15% 0 15% 0;
 }
+
 .section_contact{
   padding: 8% 0 0% 0;
 }
-
-
 
 //Secion del header texto, frame imagen
 .frame_header {
@@ -95,8 +94,7 @@ p{
         font-weight: bold;
         font-size: larger;
     }
-
- }
+}
 
 
 
@@ -106,6 +104,11 @@ p{
   .carousel-inner {
     > .item {
       transition: 500ms ease-in-out left;
+      a{
+        img {
+          width: 200px;
+        }
+      }
     }
 
     .active {
@@ -250,7 +253,7 @@ body {
     color:white;
   }
   p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align:left;    
   }
 }
@@ -277,6 +280,12 @@ body {
   }   
 }
 
+.section-title {
+  padding-bottom: 4%;
+  h2 {
+    font-size: 2rem;
+  }
+}
 /*Para las animaciones*/
 
 /* Landscape phone to portrait tablet */
@@ -323,8 +332,18 @@ body {
       button {
         float: right !important;
       }
-    }  
-        
+    }
+  
+  .section_description{
+      text-align: center;
+      padding: 4%;      
+  }
+
+  .page-footer{
+    .footer-body{
+      padding: 8%;
+    }
+  }  
 }
 
 
@@ -332,6 +351,7 @@ body {
   .img_header{     
     width: 280px;      
   } 
+  
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
@@ -347,11 +367,6 @@ body {
 }
 
 
-.section-title {
-  padding-bottom: 4%;
-  h2 {
-    font-size: 2rem;
-  }
-}
+
 
 

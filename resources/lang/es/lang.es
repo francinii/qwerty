@@ -1,6 +1,5 @@
 <?php
 
-
 //***************************** Menu *********************************//
 $vocab["menu_inicio"]            = "Inicio";
 $vocab["menu_contactenos"]       = "Contáctenos";
@@ -16,16 +15,19 @@ $vocab["titulo_clientes"] = "Nuestros Clientes";
 //***************************** Seccion Descripcion *********************************//
 
 $vocab["descripcion_titulo"]  = "Qwerty";
-$vocab["descripcion_subtitulo"]  = "Programamos el futuro";
+$vocab["descripcion_subtitulo"]  = "Programando el futuro";
 $vocab["descripcion_texto"]  =   "Somos una empresa costarricense de desarrollo de software
-                                que busca dar a los clientes
-                                productos que se ajusten a sus necesidades. 
+                                que busca dar a los clientes productos que se ajusten 
+                                a sus necesidades. 
                                 Nuestra compañía construye, desarrolla y
                                 pone en producción aplicaciones web
                                 y aplicaciones móviles así como sitios web
                                 y comercios electrónicos. No dudes en
                                 contactarnos.";
 $vocab["descripcion_conozcanos"]  = "¡Conózcanos!";
+$vocab["descripcion_tu_idea"]  = "¡Queremos conocer tu idea,";
+$vocab["descripcion_tu_proyecto"]  = "empecemos con tu proyecto!";
+$vocab["descripcion_empecemos"]  = "¡Empecemos!";
 
 
 //***************************** Seccion About *********************************//
@@ -45,10 +47,10 @@ $vocab["acerca_titulo_mision"]  = "Nuestra Misión";
 $vocab["acerca_texto_mision"]  = "Proveer a nuestros clientes de soluciones informáticas
                                  que se ajusten a sus necesidades y presupuestos,
                                  aportando valor y eficiencia a sus negocios.";
-$vocab["acerca_titulo_vision"]  = "Nuestra Visión";
+$vocab["acerca_titulo_vision"]  ="Nuestra Visión";
 $vocab["acerca_texto_vision"]  = "Ser la mejor alternativa nacional para el desarrollo
                                   de soluciones informáticas.";
-$vocab["acerca_titulo_valores"]  = "Qwerty Valores";
+$vocab["acerca_titulo_valores"]  ="Qwerty Valores";
 $vocab["acerca_valor_1"]  = "Compromiso";
 $vocab["acerca_valor_2"]  = "Creatividad";
 $vocab["acerca_valor_3"]  = "Confianza";
@@ -85,12 +87,12 @@ $vocab["clientes_titulo_2"]  = "Conocé algunos de nuestros clientes satisfechos
 
 $vocab["contacto_titulo"]  = "¡Contáctenos!";
 $vocab["contacto_direccion"]  = "Barva, Heredia Costa Rica. Residencial Puente Piedra.";
-$vocab["contacto_numero"]  = "(+506) 22631956";
-$vocab["contacto_correo"]  = "info.qwertycr@gmail.com";
+$vocab["contacto_numero"]  = "(+506) 2101-1868";
+$vocab["contacto_correo"]  = "info@qwerty.co.cr";
 $vocab["contacto_form_titulo"]  = "¡Queremos conocer tu proyecto!";
 $vocab["contacto_form_nombre"]  = "Nombre";
 $vocab["contacto_form_correo"]  = "Correo";
-$vocab["contacto_form_mensaje"]  = "Mensaje";
+$vocab["contacto_form_mensaje"] = "Mensaje";
 
 
 //***************************** Seccion Metodología *********************************//
@@ -131,8 +133,9 @@ $vocab["footer_derechos"]  = " © 2020 Todos los derechos reservados.Qwerty Cost
 //***************************** Palabras claves *********************************//
 $vocab["keyword_1"]  = "Qwerty";
 $vocab["keyword_2"]  = "Qwerty Costa Rica";
-$vocab["keyword_3"]  = "Pagina web";
+$vocab["keyword_3"]  = "Página web";
 $vocab["keyword_4"]  = "Desarrollo de software";
 $vocab["keyword_5"]  = "Sotware";
-$vocab["keyword_6"]  = "Aplicaciones web";
-$vocab["keyword_7"]  = "Aplicaciones moviles";
+$vocab["keyword_6"]  = "Aplicaciones web ";
+$vocab["keyword_7"]  = "Aplicaciones moviles responsive ";
+$vocab["keyword_8"]  = "Costa Rica Qwerty QWERTY Qwerty cr ";
