@@ -90,6 +90,7 @@ h1 {
 }
 
 .timeline ul li:nth-child(odd) div {
+  text-align: left;
   left: 45px;
 }
 

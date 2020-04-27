@@ -110,7 +110,10 @@ p {
 }
 
 .section_about {
-  padding: 15% 0 15% 0;
+  padding: 10% 0 10% 0;
+}
+.section_about img {
+  padding: 0% 5% 0% 5%;
 }
 
 .section_contact {
@@ -196,15 +199,25 @@ body {
   background: #cbcbcb;
 }
 
-.service-card img {
+.container-services {
+  text-align: center;
+}
+
+.container-service-card {
+  height: auto;
+}
+.container-service-card .service-card {
+  height: 100%;
+}
+.container-service-card .service-card img {
   display: block;
   margin: auto;
 }
-.service-card .informacion-circulo {
-  padding: 0px 0% 0px 0%;
+.container-service-card .service-card .informacion-circulo {
+  padding: 0px 0px 0px 0px;
   text-align: center;
 }
-.service-card .informacion-circulo p {
+.container-service-card .service-card .informacion-circulo p {
   font-size: 1.2rem;
 }
 
@@ -230,11 +243,6 @@ body {
 .section_portafolio {
   height: 400px;
   padding-top: 8%;
-}
-
-.img_services:hover {
-  height: 110px;
-  width: 110px;
 }
 
 .bg-principal {
@@ -301,17 +309,33 @@ body {
   font-size: 2rem;
 }
 
-/*Para las animaciones*/
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 1199.98px) {
+  .container-service-card .service-card {
+    height: 500px;
+  }
+}
+@media (max-width: 900px) {
+  .img_header {
+    width: 280px;
+  }
+}
+/* Landscape phone to portrait tablet  */
+@media (max-width: 767.98px) {
   nav .menu_collapsed {
     width: 100%;
   }
   nav .menu_collapsed button {
     float: right !important;
   }
-}
-@media (max-width: 690px) {
+
+  .container-service-card .service-card {
+    height: 500px;
+  }
+
+  .container-fluid {
+    text-align: center;
+  }
+
   #portada_expandida {
     display: none;
   }
@@ -325,17 +349,17 @@ body {
     margin-bottom: 15%;
   }
   #portada_reducida .content {
-    padding: 15% 0% 15% 0%;
+    padding: 15% 0% 5% 0%;
   }
   #portada_reducida h1, #portada_reducida h2, #portada_reducida p {
     color: white;
   }
   #portada_reducida .img_reducida img {
-    width: 150px;
+    width: 180px;
   }
 }
-/* Landscape phones and down */
-@media (max-width: 480px) {
+/* Landscape phones and down  */
+@media (max-width: 575.98px) {
   nav .menu_collapsed {
     width: 100%;
   }
@@ -347,10 +371,13 @@ body {
     text-align: center;
     padding: 4%;
   }
-}
-@media (max-width: 900px) {
-  .img_header {
-    width: 280px;
+
+  .page-footer .footer-body {
+    padding: 8%;
+  }
+
+  .container-service-card .service-card {
+    height: 410px;
   }
 }
 @media all and (transform-3d), (-webkit-transform-3d) {

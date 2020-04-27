@@ -71,7 +71,10 @@ p{
 }
 
 .section_about{
-  padding: 15% 0 15% 0;
+  padding: 10% 0 10% 0;
+  img {
+    padding: 0% 5% 0% 5%;
+  }
 }
 
 .section_contact{
@@ -178,19 +181,31 @@ body {
   background: #cbcbcb;
 }
 
-.service-card {
-   img {
-    display:block;
-    margin:auto;   
-   }
-  .informacion-circulo {
-    padding: 0px 0% 0px 0%;
-    text-align:center;
-    p{
-      font-size: 1.2rem;
-    }  
-  }
+//Para los servicios 
+.container-services {
+  text-align: center;  
+
 }
+
+//Para los valores 
+.container-service-card{
+  height: auto;
+      .service-card {
+      height: 100%;
+      img {
+        display:block;
+        margin:auto;   
+      }
+      .informacion-circulo {
+        padding: 0px 0px 0px 0px;
+        text-align:center;
+        p{
+          font-size: 1.2rem;
+        }  
+      }
+    }
+}
+
 
 .section-circles {
   padding: 0% 0% 0% 0% ;
@@ -214,12 +229,6 @@ body {
 .section_portafolio{
   height: 400px;
   padding-top: 8%;
-}
-
-.img_services:hover {
-  height: 110px;
-  width: 110px;
-  //margin-left: -5px;
 }
 
 .bg-principal {
@@ -286,20 +295,40 @@ body {
     font-size: 2rem;
   }
 }
-/*Para las animaciones*/
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+
+@media (max-width: 1199.98px) {
+  .container-service-card{
+    .service-card{
+      height: 500px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .img_header{     
+    width: 280px;      
+  }   
+}
+
+
+/* Landscape phone to portrait tablet  */
+@media (max-width: 767.98px) {
   nav .menu_collapsed{
       width: 100%;
       button {
         float: right !important;
       }
     }  
-}
+  .container-service-card{
+    .service-card{
+      height: 500px;
+    }
+  }
+  .container-fluid{
+    text-align: center;
+  }
 
-
-@media (max-width: 690px) {
   #portada_expandida{
     display: none; 
   }
@@ -312,21 +341,22 @@ body {
       margin-bottom: 15%;
       
       .content {
-        padding: 15% 0% 15% 0%;
+        padding: 15% 0% 5% 0%;
       }
       h1, h2, p{
         color:white;
       }
       
       .img_reducida img{
-          width: 150px;
+          width: 180px;
       }
   } 
 }
 
- 
-/* Landscape phones and down */
-@media (max-width: 480px) {
+
+/* Landscape phones and down  */
+@media (max-width:  575.98px) {
+  
   nav .menu_collapsed{
       width: 100%;
       button {
@@ -344,15 +374,13 @@ body {
       padding: 8%;
     }
   }  
+  .container-service-card{
+    .service-card{
+      height: 410px;
+    }
+  }
 }
 
-
-@media (max-width: 900px) {
-  .img_header{     
-    width: 280px;      
-  } 
-  
-}
 
 @media all and (transform-3d), (-webkit-transform-3d) {
   .multi-item-carousel .carousel-inner > .item {
@@ -365,7 +393,6 @@ body {
   }
 
 }
-
 
 
 
