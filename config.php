@@ -5,7 +5,7 @@ $lang = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
 ($lang == 'en') ? include('resources/lang/en/lang.en') : include('resources/lang/es/lang.es');
 
 //Variable para determinar el ambiente: 1 ambiente de desarrollo activado
-$ambiente = 1;
+$ambiente = 0;
 
 $SERVER_URL = ($ambiente == 1 ) ? 'http://localhost/qwerty2/qwerty': 'https://www.qwerty.co.cr';
 const TEMPLATES_PATH = 'resources/views/templates';
