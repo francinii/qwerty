@@ -1,6 +1,6 @@
 <div class="row section_clients" >                   
     <div class="col-md-4 col-xs-10 col-sm-10 mx-auto element-zoom-in">
-        <img class="img-fluid" src="<?=$routes["img_content_logo"]?>" alt="">
+        <img class="img-fluid" src="<?=$routes["img_content_clientes"]?>" alt=" <?= $vocab["clientes_titulo"] ?>">
     </div>          
     <div class="col-md-5 col-xs-10 col-sm-10 mx-auto element-fade-in">            
         <h2> <?= $vocab["clientes_titulo"] ?></h2>
@@ -21,36 +21,36 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="col-xs-4">
-                        <a href="<?= $routes["link_cliente_1"]?>">
-                            <img src="<?= $routes["img_content_cliente_1"]?>" class="img-responsive">
+                        <a href="<?= $routes["link_cliente_1"]?>" target="_blank">
+                            <img src="<?= $routes["img_content_cliente_1"]?>" class="img-responsive" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
-                        <a href="<?=$routes["link_cliente_2"]?>">
-                            <img src="<?= $routes["img_content_cliente_2"]?>" class="img-responsive">
+                        <a href="<?=$routes["link_cliente_2"]?>" target="_blank">
+                            <img src="<?= $routes["img_content_cliente_2"]?>" class="img-responsive" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
-                        <a href="<?=$routes["link_cliente_3"]?>">
-                            <img src="<?= $routes["img_content_cliente_3"]?>" class="img-responsive">
+                        <a href="<?=$routes["link_cliente_3"]?>" target="_blank">
+                            <img src="<?= $routes["img_content_cliente_3"]?>" class="img-responsive" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
-                        <a href="<?=$routes["link_cliente_4"]?>">
-                            <img src="<?= $routes["img_content_cliente_4"]?>" class="img-responsive">
+                        <a href="<?=$routes["link_cliente_4"]?>" target="_blank">
+                            <img src="<?= $routes["img_content_cliente_4"]?>" class="img-responsive" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
-                        <a href="<?=$routes["link_cliente_5"]?>">
-                            <img src="<?= $routes["img_content_cliente_5"]?>" class="img-responsive">
+                        <a href="<?=$routes["link_cliente_5"]?>" target="_blank">
+                            <img src="<?= $routes["img_content_cliente_5"]?>" class="img-responsive" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>

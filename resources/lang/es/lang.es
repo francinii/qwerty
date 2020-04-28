@@ -50,7 +50,7 @@ $vocab["acerca_texto_mision"]  = "Proveer a nuestros clientes de soluciones info
 $vocab["acerca_titulo_vision"]  ="Nuestra Visión";
 $vocab["acerca_texto_vision"]  = "Ser la mejor alternativa nacional para el desarrollo
                                   de soluciones informáticas.";
-$vocab["acerca_titulo_valores"]  ="Qwerty Valores";
+$vocab["acerca_titulo_valores"]  ="Qwerty valores";
 $vocab["acerca_valor_1"]  = "Compromiso";
 $vocab["acerca_valor_2"]  = "Creatividad";
 $vocab["acerca_valor_3"]  = "Confianza";
@@ -61,7 +61,7 @@ $vocab["acerca_valor_5"]  = "Innovación";
 $vocab["acerca_valor_texto_1"]  = "  Orientamos nuestros esfuerzos para
                                           alcanzar la satisfacción de nuestros clientes 
                                           y el cumplimiento de sus objetivos en el ámbito de 
-                                          las tecnologías de información..";
+                                          las tecnologías de información.";
 
 $vocab["acerca_valor_texto_2"]  = "  Procuramos innovar y hacer uso de la creatividad
                                           de nuestros colaboradores en la creación de soluciones
@@ -87,6 +87,8 @@ $vocab["clientes_titulo_2"]  = "Conocé algunos de nuestros clientes satisfechos
 
 $vocab["contacto_titulo"]  = "¡Contáctenos!";
 $vocab["contacto_direccion"]  = "Barva, Heredia Costa Rica. Residencial Puente Piedra.";
+$vocab["contacto_como_llegar"]  = "Llegá con Waze";
+
 $vocab["contacto_numero"]  = "(+506) 2101-1868";
 $vocab["contacto_correo"]  = "info@qwerty.co.cr";
 $vocab["contacto_form_titulo"]  = "¡Queremos conocer tu proyecto!";
@@ -108,7 +110,7 @@ $vocab["metodologia_texto_2"]  = "Creamos un prototipo visual de tu idea de nego
 $vocab["metodologia_titulo_3"]  = "Desarrollamos";
 $vocab["metodologia_texto_3"]  = "Materializamos tu idea en un producto de calidad.";
 $vocab["metodologia_titulo_4"]  = "Implementamos";
-$vocab["metodologia_texto_4"]  = " Tu producto listo para usarse.";
+$vocab["metodologia_texto_4"]  = "Tu producto listo para usarse.";
 
 
 
@@ -125,7 +127,7 @@ $vocab["servicio_titulo_4"]  = "Desarrollo de aplicaciones móviles.";
 //***************************** Seccion Footer *********************************//
 
 $vocab["footer_titulo"]  = "¡Queremos materializar tu proyecto! ";
-$vocab["footer_facebook"]  = "¡Seguínos en Facebook! ";
+$vocab["footer_facebook"]  = "¡Síguenos en Facebook! ";
 $vocab["footer_derechos"]  = " © 2020 Todos los derechos reservados.Qwerty Costa Rica ";
 
 
@@ -138,4 +140,4 @@ $vocab["keyword_4"]  = "Desarrollo de software";
 $vocab["keyword_5"]  = "Sotware";
 $vocab["keyword_6"]  = "Aplicaciones web ";
 $vocab["keyword_7"]  = "Aplicaciones moviles responsive ";
-$vocab["keyword_8"]  = "Costa Rica Qwerty QWERTY Qwerty cr ";
+$vocab["keyword_8"]  = "Costa Rica Qwerty QWERTY Qwerty cr";

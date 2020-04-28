@@ -5,53 +5,64 @@
         <h3 class="font-weight-bold text-uppercase mt-3 mb-4"><?= $vocab["contacto_titulo"] ?></h3>        
           <li>
             <a href="<?= $routes["link_map"]?>" target="_blank">
-              <img src="<?= $routes["img_content_direccion"]?>"> 
+              <img src="<?= $routes["img_content_direccion"]?>" alt = " <?= $vocab["contacto_direccion"] ?>"> 
               <?= $vocab["contacto_direccion"] ?>
              </a>
+          </li> 
+          <li>
+              <a href="<?= $routes["link_waze"]?>" target="_blank">
+              <img src="<?= $routes["img_content_waze"] ?>" alt = "<?=$vocab["contacto_como_llegar"] ?>"> 
+              <?=$vocab["contacto_como_llegar"] ?></a>
           </li>                  
           <li>
             <a href="mailto:<?=$routes["img_content_correo"]?>">
-              <img src="<?= $routes["img_content_correo"]?>">
+              <img src="<?= $routes["img_content_correo"]?>" alt = "<?= $vocab["contacto_correo"] ?>">
               <?= $vocab["contacto_correo"] ?>
             </a>
           </li>               
           <li>
-            <a><img src="<?= $routes["img_content_telefono"]?>"> 
-                <?= $vocab["contacto_numero"] ?>
-            </a>
+            <a href="tel: <?= $vocab["contacto_numero"] ?>">
+            <img src="<?= $routes["img_content_telefono"]?>" alt = "<?= $vocab["contacto_numero"] ?>"> 
+            <?= $vocab["contacto_numero"] ?> </a>
+          </li> 
+          <li>
+              <a href="<?= $routes["link_facebook"] ?>" target="_blank">
+                <img  src="<?= $routes["img_content_facebook"]  ?>" alt=" <?= $vocab["footer_facebook"] ?> ">
+                <?= $vocab["footer_facebook"] ?>  
+              </a> 
           </li>            
         </ul>       
-        <iframe  src="<?=$routes["link_iframe_map"]?>" width="450" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe  src="<?=$routes["link_iframe_map"]?>" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>      
     <div class="col-md-5 col-xs-10 col-sm-10  mx-auto ">     
         <h3 class="font-weight-bold text-uppercase mt-3 mb-4">
              <?= $vocab["contacto_form_titulo"] ?>     
         </h3>  
-       <form class="form-horizontal" action="">
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="name"><?= $vocab["contacto_form_nombre"] ?></label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="name" name ="nombre" placeholder="Nombre Completo">
+        <form class="form-horizontal" action="<?= $routes["pagina_inicio"]?>" method= 'POST'>
+
+                <div class="form-group">
+                  <label class=" col-md-3 col-xs-12 col-sm-12" for="nombre"><?= $vocab["contacto_form_nombre"] ?></label>
+                  <div class="col-md-9 col-xs-12 col-sm-12">
+                    <input type="text" class="form-control" id="nombre" name= "nombre" placeholder="Nombre Completo"  required>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="mail" name ="correo"><?= $vocab["contacto_form_correo"] ?></label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="mail" placeholder="Dirección de correo">
+                <div class="form-group">
+                  <label class=" col-md-3 col-xs-12 col-sm-12" for="correo"><?= $vocab["contacto_form_correo"] ?></label>
+                  <div class="col-md-9 col-xs-12 col-sm-12">
+                    <input type="email" class="form-control" id="correo" placeholder="Dirección de correo" name= "correo"  required>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="message" name ="mensaje"><?= $vocab["contacto_form_mensaje"] ?></label>
-                <div class="col-sm-10">
-                  <textarea type="text" class="form-control" id="mesage" placeholder="Mensaje">
-                  </textarea>
+                <div class="form-group">
+                  <label class=" col-md-3 col-xs-12 col-sm-12" for="mensaje"><?= $vocab["contacto_form_mensaje"] ?></label>
+                  <div class="col-md-9 col-xs-12 col-sm-12">
+                    <textarea type="text" class="form-control" id="mensaje" placeholder="Mensaje" name= "mensaje"  required></textarea>
+                  </div>
+                </div>              
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-info"><?= $vocab["contacto_titulo"] ?></button>
+                  </div>
                 </div>
-              </div>              
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-info"><?= $vocab["contacto_titulo"] ?></button>
-                </div>
-              </div>
-        </form> 
+            </form> 
     </div>                        
 </div>

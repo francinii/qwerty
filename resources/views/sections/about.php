@@ -1,8 +1,7 @@
 <div class="row section_about" >                
     <div class="col-md-4 col-xs-12 col-sm-10  col-sm-offset-1 col-xs-offset-1 ">
-        <img class="img-fluid" src="<?= $routes["img_content_logo"]?>" alt="">
-    </div>  
-    
+        <img class="img-fluid" src="<?= $routes["img_content_logo"]?>" alt="Logo de Qwerty">
+    </div>      
     <div class="col-md-5 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1   ">            
         <h2><?= $vocab["acerca_subtitulo"] ?> </h2>     
         <p> <?= $vocab["acerca_texto"] ?>  </p>
@@ -14,13 +13,13 @@
         <p> <?= $vocab["acerca_texto_mision"] ?>  </p>
     </div>             
     <div class="col-md-5 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1">
-        <img class="img-fluid" src="<?= $routes["img_content_logo_2"]?>" alt="Logo Qwerty">
+        <img class="img-fluid" src="<?= $routes["img_content_mision"]?>" alt="<?= $vocab["acerca_titulo_mision"] ?>">
     </div>                       
 </div>
 
 <div class="row section_about" >              
     <div class="col-md-4 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1">
-        <img class="img-fluid" src="<?= $routes["img_content_logo"]?>" alt="Logo">
+        <img class="img-fluid" src="<?= $routes["img_content_vision"]?>" alt="<?= $vocab["acerca_titulo_vision"] ?>">
     </div>  
     <div class="col-md-5 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1">            
         <h2><?= $vocab["acerca_titulo_vision"] ?></h2>
@@ -54,12 +53,10 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 service-card">
-                <img  class="" src="<?= $routes["img_content_creatividad"] ?>" alt="<?= $vocab["acerca_valor_4"] ?>">
+                <img class="" src="<?= $routes["img_content_creatividad"] ?>" alt="<?= $vocab["acerca_valor_4"] ?>">
                 <div class="informacion-circulo">
                     <h2> <?= $vocab["acerca_valor_2"] ?></h2>
-                    <p> <?= $vocab["acerca_valor_texto_4"] ?>  
-                     
-                    </p>
+                    <p> <?= $vocab["acerca_valor_texto_4"] ?>  </p>
                 </div>
             </div>            
         </div>

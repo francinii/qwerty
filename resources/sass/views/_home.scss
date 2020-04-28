@@ -4,6 +4,7 @@
   font-size: 1rem;
   font-family:$font_type;
   line-height : 30px;  
+  
 }
 
 .row{
@@ -79,6 +80,7 @@ p{
 
 .section_contact{
   padding: 8% 0 0% 0;
+  text-align: left;
 }
 
 //Secion del header texto, frame imagen
@@ -296,8 +298,14 @@ body {
   }
 }
 
+@media (min-width:767.99px) {
+  #portada_section_reducida{
+    display: none;
+  }  
+}
 
 @media (max-width: 1199.98px) {
+
   .container-service-card{
     .service-card{
       height: 500px;
@@ -327,11 +335,20 @@ body {
   }
   .container-fluid{
     text-align: center;
+    overflow-x: hidden;
   }
 
   #portada_expandida{
     display: none; 
   }
+  #portada_section_expandida{
+    display: none; 
+  }
+  #portada_section_reducida{
+    display: block !important;
+    height: 250px;
+  }
+
   #portada_reducida{     
       display: block !important;
       height: 630px;
@@ -381,7 +398,6 @@ body {
   }
 }
 
-
 @media all and (transform-3d), (-webkit-transform-3d) {
   .multi-item-carousel .carousel-inner > .item {
     transition: 500ms ease-in-out left;
@@ -393,7 +409,3 @@ body {
   }
 
 }
-
-
-
-

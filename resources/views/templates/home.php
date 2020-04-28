@@ -6,7 +6,12 @@
         $nombrePagina = $pagina[0];  
       }else{ 
           $nombrePagina = 'inicio';      
-      };     
+      };       
+      if( $nombrePagina != 'inicio' &&$nombrePagina != 'contacto' && $nombrePagina != 'clientes' && $nombrePagina != 'servicios' && $nombrePagina != 'acerca'){     
+         //  include($routes["seccion_error"]);  
+           header('Location:'.$routes["seccion_error"]); 
+      } 
+
       include($routes["seccion_nav"]);      
       //Agregando una seccion de encabezado
       if( $nombrePagina == 'inicio'){         
@@ -32,9 +37,9 @@
       }           
       if($nombrePagina == 'contacto'){     
            include($routes["seccion_contacto"]);  
-       }    
-       
-      include($routes["seccion_footer"]);
+       }     
+
+       include($routes["seccion_footer"]);
   
    ?>   
 </div>

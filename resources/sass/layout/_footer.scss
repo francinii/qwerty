@@ -2,7 +2,7 @@
     background-color: $color_principal;
     padding: 5%;
     
-    h2{
+    h3{
         color: $font_color_light;
     }
 }
@@ -26,6 +26,8 @@
     
     .footer-body{
         background-color: $color_dark_light;
+        text-align: left;
+        padding: 3% 3% 3% 5%;
     }
 
     h5{

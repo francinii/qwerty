@@ -1,6 +1,6 @@
 <div class="row"> 
     <div class="col-md-12 frame">
-        <img src="<?= $routes["img_layout_frame_4"]?>">        
+        <img src="<?= $routes["img_layout_frame_4"]?>" alt ="">        
     </div>
 </div>
 <div class="row methodology-container "> 
@@ -14,28 +14,28 @@
             <ul>
                 <li>           
                     <div>         
-                        <img src="<?= $routes["img_content_idear"]?>"> 
+                        <img src="<?= $routes["img_content_idear"]?>" alt ="<?= $vocab["metodologia_titulo_1"] ?>"> 
                         <time><?= $vocab["metodologia_titulo_1"]  ?></time>    
                         <?= $vocab["metodologia_texto_1"]  ?>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="<?= $routes["img_content_prototipar"]?>"> 
+                        <img src="<?= $routes["img_content_prototipar"]?>" alt ="<?= $vocab["metodologia_titulo_2"] ?>"> 
                         <time><?= $vocab["metodologia_titulo_2"] ?></time>
                         <?= $vocab["metodologia_texto_2"]  ?>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="<?= $routes["img_content_crear"]?>"> 
+                        <img src="<?= $routes["img_content_crear"]?>" alt ="<?= $vocab["metodologia_titulo_3"] ?>"> 
                         <time><?= $vocab["metodologia_titulo_3"]  ?></time> 
                         <?= $vocab["metodologia_texto_3"]  ?>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="<?= $routes["img_content_implementar"]?>"> 
+                        <img src="<?= $routes["img_content_implementar"]?>" alt ="<?= $vocab["metodologia_titulo_4"] ?>"> 
                         <time><?= $vocab["metodologia_titulo_4"]  ?></time>
                         <?= $vocab["metodologia_texto_4"]  ?>
                     </div>
@@ -46,6 +46,6 @@
 </div>
 <div class="row"> 
     <div class="col-md-12 frame">
-        <img src="<?=$routes["img_layout_frame_5"]?>">        
+        <img src="<?=$routes["img_layout_frame_5"]?>" alt ="">        
     </div>
 </div>
