@@ -2,7 +2,7 @@
     <div class="col-md-4 col-xs-10 col-sm-10 mx-auto element-zoom-in">
         <img class="img-fluid" src="<?=$routes["img_content_clientes"]?>" alt=" <?= $vocab["clientes_titulo"] ?>">
     </div>          
-    <div class="col-md-5 col-xs-10 col-sm-10 mx-auto element-fade-in">            
+    <div class="col-md-5 col-xs-10 col-sm-10 mx-auto">            
         <h2> <?= $vocab["clientes_titulo"] ?></h2>
         <p> <?= $vocab["clientes_texto_1"] ?> </p>
         <p> <?= $vocab["clientes_texto_2"] ?>  </p>
@@ -10,7 +10,7 @@
 </div>
 <div class="row section_client_title section_clients">
     <div class="col-md-12">
-        <h2 class="element-zoom-in"> 
+        <h2 class=""> 
              <?= $vocab["clientes_titulo_2"] ?>
         </h2>
     </div>

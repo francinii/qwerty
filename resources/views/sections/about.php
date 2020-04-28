@@ -17,7 +17,7 @@
     </div>                       
 </div>
 
-<div class="row section_about" style="align-items: center; display: flex;" >              
+<div class="row section_about"  >              
     <div class="col-md-4 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1">
         <img class="img-fluid" src="<?= $routes["img_content_vision"]?>" alt="<?= $vocab["acerca_titulo_vision"] ?>">
     </div>  

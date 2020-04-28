@@ -3,8 +3,7 @@
   padding: 0;
   font-size: 1rem;
   font-family:$font_type;
-  line-height : 30px;  
-  
+  line-height : 30px;    
 }
 
 .row{
@@ -65,18 +64,23 @@ p{
 
 .section_description{
   padding: 0px 0px 0px 0px;
+  align-items: center;
+   display: flex;
 }
 
 .section_clients {
-    padding: 10% 0 4% 0;
+    padding: 0% 0 4% 0;
 }
 
 .section_about{
   padding: 10% 0 10% 0;
+  align-items: center;
+   display: flex;
   img {
     padding: 0% 5% 0% 5%;
   }
 }
+
 
 .section_contact{
   padding: 8% 0 0% 0;
@@ -327,7 +331,7 @@ body {
       button {
         float: right !important;
       }
-    }  
+  }  
   .container-service-card{
     .service-card{
       height: 500px;
@@ -348,7 +352,6 @@ body {
     display: block !important;
     height: 250px;
   }
-
   #portada_reducida{     
       display: block !important;
       height: 630px;
@@ -368,6 +371,7 @@ body {
           width: 180px;
       }
   } 
+
 }
 
 

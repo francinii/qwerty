@@ -68,7 +68,7 @@
                 </div>              
                 <div class="form-group">
                   <div class="col-sm-offset-3 col-sm-9">
-                    <button type="submit" class="btn btn-info"><?= $vocab["contacto_titulo"] ?></button>
+                    <button type="button" onclick ="enviarFormulario('<?=$SERVER_URL?>')" class="btn btn-info"><?= $vocab["contacto_titulo"] ?></button>
                   </div>
                 </div>
             </form> 
@@ -79,25 +79,3 @@
         <?= $vocab["footer_derechos"] ?>       
     </div>
 </footer>
-
-
-
-<?php
-
-
-$destinatario = $vocab["contacto_correo"] ;
-if (isset($_POST['nombre']) && isset($_POST['mensaje']) && isset($_POST['correo'])) { 
-    $nombre = $_POST['nombre'];
-    $mensaje = $_POST['mensaje'];
-    $correo = $_POST['correo'];
-      $contenidoformulario = "Detalle del Formulario:\n\n";
-    $contenidoformulario .= "Nombre: ". $nombre."\n";
-    $contenidoformulario .= "Correo: ". $correo."\n";
-    $contenidoformulario .= "Mensaje: \n". $mensaje."\n";
-    mail($destinatario,$nombre,$contenidoformulario);
-}
-
-?>
-
-
-

@@ -31,9 +31,10 @@ $routes["seccion_nav"] =  PARTIALS_PATH. '/nav.php';
 $routes["seccion_contacto"] =  SECTIONS_PATH. '/contact.php';
 $routes["seccion_footer"] = PARTIALS_PATH. '/footer.php';
 $routes["seccion_error"] = $SERVER_URL. '/error.php';
+$routes["seccion_alert"] = PARTIALS_PATH. '/alert.php';
 
-$routes["img_content_logo"] =  $SERVER_URL . '/img/content/logo2.webp';
-$routes["img_content_logo_2"] =  $SERVER_URL . '/img/content/logo3.webp';
+$routes["img_content_logo"] =  $SERVER_URL . '/img/content/logo2.svg';
+$routes["img_content_logo_2"] =  $SERVER_URL . '/img/content/logo3.svg';
 $routes["img_content_logo_3"] =  $SERVER_URL . '/img/content/logo.svg';
 $routes["img_content_web"] =  $SERVER_URL . '/img/content/web.svg';
 $routes["img_content_developer"] =  $SERVER_URL . '/img/content/developer.svg';
@@ -44,31 +45,31 @@ $routes["img_content_correo"] =  $SERVER_URL . '/img/content/correo.svg';
 $routes["img_content_telefono"] =  $SERVER_URL . '/img/content/tel.svg';
 $routes["img_content_facebook"] =  $SERVER_URL . '/img/content/facebook.svg';
 $routes["img_content_waze"] =  $SERVER_URL . '/img/content/waze.svg';
-$routes["img_content_cliente_1"] =  $SERVER_URL . '/img/content/cliente1.webp';
-$routes["img_content_cliente_2"] =  $SERVER_URL . '/img/content/cliente2.webp';
-$routes["img_content_cliente_3"] =  $SERVER_URL . '/img/content/cliente3.webp';
-$routes["img_content_cliente_4"] =  $SERVER_URL . '/img/content/cliente4.webp';
-$routes["img_content_cliente_5"] =  $SERVER_URL . '/img/content/cliente5.webp';
-$routes["img_content_cliente_6"] =  $SERVER_URL . '/img/content/cliente6.webp';
+$routes["img_content_cliente_1"] =  $SERVER_URL . '/img/content/cliente1.svg';
+$routes["img_content_cliente_2"] =  $SERVER_URL . '/img/content/cliente2.svg';
+$routes["img_content_cliente_3"] =  $SERVER_URL . '/img/content/cliente3.svg';
+$routes["img_content_cliente_4"] =  $SERVER_URL . '/img/content/cliente4.svg';
+$routes["img_content_cliente_5"] =  $SERVER_URL . '/img/content/cliente5.svg';
+$routes["img_content_cliente_6"] =  $SERVER_URL . '/img/content/cliente6.svg';
 
-$routes["img_content_idear"] =  $SERVER_URL . '/img/content/idear.webp';
-$routes["img_content_prototipar"] =  $SERVER_URL . '/img/content/prototipar.webp';
-$routes["img_content_crear"] =  $SERVER_URL . '/img/content/crear.webp';
-$routes["img_content_implementar"] =  $SERVER_URL . '/img/content/implementar.webp';
+$routes["img_content_idear"] =  $SERVER_URL . '/img/content/idear.svg';
+$routes["img_content_prototipar"] =  $SERVER_URL . '/img/content/prototipar.svg';
+$routes["img_content_crear"] =  $SERVER_URL . '/img/content/crear.svg';
+$routes["img_content_implementar"] =  $SERVER_URL . '/img/content/implementar.svg';
 
-$routes["img_content_compromiso"] =  $SERVER_URL . '/img/content/compromiso.webp';
-$routes["img_content_confianza"] =  $SERVER_URL . '/img/content/confianza.webp';
-$routes["img_content_creatividad"] =  $SERVER_URL . '/img/content/creatividad.webp';
-$routes["img_content_innovacion"] =  $SERVER_URL . '/img/content/innovacion.webp';
+$routes["img_content_compromiso"] =  $SERVER_URL . '/img/content/compromiso.svg';
+$routes["img_content_confianza"] =  $SERVER_URL . '/img/content/confianza.svg';
+$routes["img_content_creatividad"] =  $SERVER_URL . '/img/content/creatividad.svg';
+$routes["img_content_innovacion"] =  $SERVER_URL . '/img/content/innovacion.svg';
 $routes["img_content_error"] = $SERVER_URL . '/img/content/error.svg';
 
 
-$routes["img_content_compu"] = $SERVER_URL . '/img/content/compu.webp';
+$routes["img_content_compu"] = $SERVER_URL . '/img/content/compu.svg';
 $routes["img_content_favicon"] = $SERVER_URL . '/favicon.ico';
 
-$routes["img_content_mision"] =  $SERVER_URL . '/img/content/mision.webp';
-$routes["img_content_vision"] =  $SERVER_URL . '/img/content/vision.webp';
-$routes["img_content_clientes"] =  $SERVER_URL . '/img/content/clientes.webp';
+$routes["img_content_mision"] =  $SERVER_URL . '/img/content/mision.svg';
+$routes["img_content_vision"] =  $SERVER_URL . '/img/content/vision.svg';
+$routes["img_content_clientes"] =  $SERVER_URL . '/img/content/clientes.svg';
 
 $routes["img_layout_frame_1"] =  $SERVER_URL . '/img/layout/header_section.svg';
 $routes["img_layout_frame_2"] =  $SERVER_URL . '/img/layout/header.svg';
@@ -102,6 +103,7 @@ $routes["js_bootstrap"] =  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/b
 $routes["js_bootstrap_local"] = $SERVER_URL .'/lib/bootstrap/js/bootstrap.min.js';
 $routes["js_carousel"] =  ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/carousel.js':$SERVER_URL. '/resources/js/carousel.min.js';
 $routes["js_timeline"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/timeline.js': $SERVER_URL. '/resources/js/timeline.min.js' ;
+$routes["js_form"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/form.js': $SERVER_URL. '/resources/js/form.min.js' ;
 
 
 

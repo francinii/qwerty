@@ -40,6 +40,7 @@
        }     
 
        include($routes["seccion_footer"]);
+       include($routes["seccion_alert"]);
   
    ?>   
 </div>

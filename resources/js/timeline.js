@@ -46,7 +46,6 @@
           itemsFadeLeft[i].classList.add("in-view", 'animated','fadeInLeft');
         }
       }
-
     }
   
     // listen for events
