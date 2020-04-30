@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html  lang="es">
-    <head>        
-        <title>Qwerty</title>
+    <head>   
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165121308-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-165121308-1');
+        </script>
+     
+        <title>Qwerty Costa Rica</title>
         <?php 
             include('config.php');
             include('includes.php');            

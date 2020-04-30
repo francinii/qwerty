@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="<?=$routes["link_normalize"]?>" >
 <link rel='stylesheet' href='<?= $routes["link_bootstrap"]?>'>
 <link rel="stylesheet" href="<?= $routes["css_main"]?>" type="text/css"/>
-<link rel="icon" type="image/ico" href="<?= $routes["img_content_favicon"] ?>">
+<link rel="shortcut icon" type="image/ico" href="<?= $routes["img_content_favicon"] ?>">
 <link href="<?= $routes["css_timeline"]?>" rel="stylesheet" type="text/css"/>
 
 <meta charset="UTF-8">      
@@ -12,18 +12,13 @@
       
  
 <meta property="og:description" 
-  content="Qwerty, empresa costarricesne de desarrollo de software" />
+  content="Qwerty, empresa costarricense de desarrollo de software" />
 <meta property="og:locale" content="es_CR" />
 <meta property="og:locale:alternate" content="es_ES" />
 <meta property="og:locale:alternate" content="en_US" />
 <meta property="og:site_name" content="Qwerty" />
 
-
-
-
-
-
- 
+<meta name="keywords" content="<?= $vocab["keyword_1"] ?>"/> 
 <meta name="keywords" content="<?= $vocab["keyword_2"] ?>"/>
 <meta name="keywords" content="<?= $vocab["keyword_3"] ?>"/>
 <meta name="keywords" content="<?= $vocab["keyword_4"] ?>"/>
@@ -32,4 +27,9 @@
 <meta name="keywords" content="<?= $vocab["keyword_7"] ?>"/>
 <meta name="keywords" content="<?= $vocab["keyword_8"] ?>"/>
 <meta name="keywords" content="<?= $vocab["keyword_9"] ?>"/>
+<meta name="keywords" content="<?= $vocab["keyword_10"] ?>"/>
+<meta name="keywords" content="<?= $vocab["keyword_11"] ?>"/>
+<meta name="keywords" content="<?= $vocab["keyword_12"] ?>"/>
+<meta name="keywords" content="<?= $vocab["keyword_13"] ?>"/>
+<meta name="keywords" content="<?= $vocab["keyword_14"] ?>"/>
 
