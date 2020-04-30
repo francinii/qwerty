@@ -298,6 +298,8 @@ body {
   margin-top: 5px;
 }
 
+
+
 @keyframes floating {
   0% {
     transform: translatey(0px);
@@ -413,4 +415,8 @@ body {
   }
 }
 
+
+.noscript {
+  margin: 0% !important; 
+}
 /*# sourceMappingURL=main.css.map */

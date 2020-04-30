@@ -2,7 +2,8 @@
 
 //Configuracion del lenguaje
 $lang = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-($lang == 'en') ? include('resources/lang/en/lang.en') : include('resources/lang/es/lang.es');
+include('resources/lang/es/lang.php');
+//($lang == 'es_ES') ? include('resources/lang/es/lang.php') : include('resources/lang/en/lang.php');
 
 //Variable para determinar el ambiente: 1 ambiente de desarrollo activado
 $ambiente = 0;
