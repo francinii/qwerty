@@ -32,8 +32,7 @@
               </a> 
           </li>            
         </ul>       
-        <iframe  src="<?=$routes["link_iframe_map"]?>" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>      
+       </div>      
     <div class="col-md-5 col-xs-10 col-sm-10  mx-auto ">     
         <h3 class="font-weight-bold text-uppercase mt-3 mb-4">
              <?= $vocab["contacto_form_titulo"] ?>     
@@ -60,9 +59,12 @@
                 </div>              
                 <div class="form-group">
                   <div class="col-sm-offset-3 col-sm-9">
-                    <button type="button" onclick ="enviarFormulario('<?=$SERVER_URL?>')" class="btn btn-info"><?= $vocab["contacto_titulo"] ?></button>
+                    <button type="button" onclick ="enviarFormulario('<?=$SERVER_URL?>')" class="btn btn-info" aria-label ="<?= $vocab["contacto_titulo"] ?>" aria-label="<?= $vocab["contacto_titulo"] ?>"><?= $vocab["contacto_titulo"] ?></button>
                   </div>
                 </div>
             </form> 
-    </div>                        
+    </div> 
+    <div  class="col-md-12">
+        <iframe  src="<?=$routes["link_iframe_map"]?>" width="100%" height="400" frameborder="0" style="border:0; padding:2%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>                       
 </div>

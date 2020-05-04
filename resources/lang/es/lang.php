@@ -7,6 +7,8 @@ $vocab["menu_acerca_de"]         = "Nuestra empresa";
 $vocab["menu_servicios"]         = "Servicios";
 $vocab["menu_portafolio"]         = "Portafolio";
 $vocab["menu_clientes"]         = "Clientes";
+$vocab["menu_lang_en"]         = "English";
+$vocab["menu_lang_es"]         = "Español";
 
 //************ Titulos
 $vocab["titulo_clientes"] = "Nuestros Clientes";

@@ -1,19 +1,37 @@
 <?php
-
-//Configuracion del lenguaje
-$lang = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-include('resources/lang/es/lang.php');
-//($lang == 'es_ES') ? include('resources/lang/es/lang.php') : include('resources/lang/en/lang.php');
+session_start();
+ 
+//verificamos si hay cambios de lenguaje mediante POST
+if(isset($_POST["lang"])){
+  $lang = $_POST["lang"];
+  if(!empty($lang)){
+    $_SESSION["lang"] = $lang;
+  }
+}
+if(isset($_SESSION['lang'])){
+    if($_SESSION['lang'] == 'es'){
+        $lang = $_SESSION["lang"];
+        include('resources/lang/es/lang.php');
+    }else if($_SESSION['lang'] == 'en'){
+        $lang = $_SESSION["lang"];
+        include('resources/lang/en/lang.php');
+    }else {
+        include('resources/lang/es/lang.php');
+    }
+    
+}else{
+    include('resources/lang/es/lang.php');
+}
 
 //Variable para determinar el ambiente: 1 ambiente de desarrollo activado
-$ambiente = 0;
+$ambiente = 1;
 
 $SERVER_URL = ($ambiente == 1 ) ? 'http://localhost/qwerty2/qwerty': 'https://www.qwerty.co.cr';
 const TEMPLATES_PATH = 'resources/views/templates';
 const PARTIALS_PATH = 'resources/views/partials';
 const SECTIONS_PATH = 'resources/views/sections';
 
-$routes["pagina_inicio"] = $SERVER_URL . '/inicio';
+$routes["pagina_inicio"] = $SERVER_URL . '/';
 $routes["pagina_acerca"] = $SERVER_URL . '/acerca';
 $routes["pagina_clientes"] = $SERVER_URL . '/clientes';
 $routes["pagina_servicios"] = $SERVER_URL . '/servicios';
@@ -67,6 +85,8 @@ $routes["img_content_error"] = $SERVER_URL . '/img/content/error.svg';
 
 $routes["img_content_compu"] = $SERVER_URL . '/img/content/compu.svg';
 $routes["img_content_favicon"] = $SERVER_URL . '/favicon.ico';
+$routes["img_content_favicon_apple"] = $SERVER_URL . '/favicon_apple.png';
+$routes["img_content_lang"] = $SERVER_URL . '/img/content/lang.svg';
 
 $routes["img_content_mision"] =  $SERVER_URL . '/img/content/mision.svg';
 $routes["img_content_vision"] =  $SERVER_URL . '/img/content/vision.svg';
@@ -105,20 +125,8 @@ $routes["js_bootstrap_local"] = $SERVER_URL .'/lib/bootstrap/js/bootstrap.min.js
 $routes["js_carousel"] =  ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/carousel.js':$SERVER_URL. '/resources/js/carousel.min.js';
 $routes["js_timeline"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/timeline.js': $SERVER_URL. '/resources/js/timeline.min.js' ;
 $routes["js_form"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/form.js': $SERVER_URL. '/resources/js/form.min.js' ;
+$routes["js_lazy_load"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/lazy-load.min.js': $SERVER_URL. '/resources/js/lazy-load.min.js' ;
 
-
-
-
-/*
-    Creating constants for heavily used paths makes things a lot easier.
-    ex. require_once(LIBRARY_PATH . "Paginator.php")
-*/
-/*defined("LIBRARY_PATH")
-    or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
-*/
-//defined("TEMPLATES_PATH")  or define("TEMPLATES_PATH", 'resources/views/templates');
-//defined("PARTIALS_PATH") or define("PARTIALS_PATH", 'resources/views/partials');
-//defined("SECTIONS_PATH")  or define("SECTIONS_PATH", 'resources/views/sections');
 /*
     Error reporting.
 */

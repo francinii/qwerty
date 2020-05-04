@@ -1,6 +1,7 @@
 .conocer_proyecto{
     background-color: $color_principal;
     padding: 5%;
+    border-bottom: 10px solid #1f729e;
     
     h3{
         color: $font_color_light;
@@ -13,8 +14,8 @@
     }
 }
 
-
 .page-footer{
+    margin-top: 10%;
     background-color: $color_dark;
     color: $font_color_light;    
     a {

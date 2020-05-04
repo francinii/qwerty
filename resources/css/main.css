@@ -12,6 +12,7 @@
 .conocer_proyecto {
   background-color: #24A6EC;
   padding: 5%;
+  border-bottom: 10px solid #1f729e;
 }
 .conocer_proyecto h3 {
   color: #fff;
@@ -22,6 +23,7 @@
 }
 
 .page-footer {
+  margin-top: 10%;
   background-color: #1f2529;
   color: #fff;
 }
@@ -52,6 +54,13 @@
   line-height: 30px;
 }
 
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format("woff2");
+  font-display: swap;
+}
 .row {
   margin-right: 0;
 }
@@ -110,11 +119,11 @@ p {
 }
 
 .section_clients {
-  padding: 0% 0 4% 0;
+  padding: 4% 0 8% 0;
 }
 
 .section_about {
-  padding: 10% 0 10% 0;
+  padding: 8% 0 8% 0;
   align-items: center;
   display: flex;
 }
@@ -123,7 +132,7 @@ p {
 }
 
 .section_contact {
-  padding: 8% 0 0% 0;
+  padding: 4% 0 0% 0;
   text-align: left;
 }
 
@@ -294,11 +303,12 @@ body {
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
   margin-top: 5px;
 }
 
-
+.noscript {
+  margin: 0% 0% 0% 0%;
+}
 
 @keyframes floating {
   0% {
@@ -316,6 +326,17 @@ body {
 }
 .section-title h2 {
   font-size: 2rem;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: initial;
+  border-color: #337ab7;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: #1f729e;
+  color: #fff;
+  text-align: center;
 }
 
 @media (min-width: 767.99px) {
@@ -379,9 +400,15 @@ body {
     color: white;
   }
   #portada_reducida .img_reducida img {
+    right: 30px;
+    margin-top: 10px;
     width: 180px;
   }
 }
+.intro h2 {
+  color: #fff;
+}
+
 /* Landscape phones and down  */
 @media (max-width: 575.98px) {
   nav .menu_collapsed {
@@ -396,6 +423,9 @@ body {
     padding: 4%;
   }
 
+  .page-footer {
+    margin-top: 5%;
+  }
   .page-footer .footer-body {
     padding: 8%;
   }
@@ -415,8 +445,4 @@ body {
   }
 }
 
-
-.noscript {
-  margin: 0% !important; 
-}
 /*# sourceMappingURL=main.css.map */

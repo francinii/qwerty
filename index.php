@@ -25,6 +25,7 @@
         <script src="<?= $routes["js_carousel"] ?>" type="text/javascript"></script>
         <script src="<?= $routes["js_timeline"] ?>" type="text/javascript"></script>   
         <script src="<?=  $routes["js_form"]  ?>" type="text/javascript"></script>
+        <script src="<?=  $routes["js_lazy_load"]  ?>" async=""></script>
         <noscript>
             <div class="noscript alert alert-warning fixed-bottom show " role="alert">                
                 <strong>¡Advertencia!</strong>

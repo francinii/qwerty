@@ -12,7 +12,7 @@
         <p id = "mensaje2"> </p>
       </div>
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal"  class="btn btn-info">Aceptar</button>
+        <button type="button" data-dismiss="modal" aria-label ="Aceptar" class="btn btn-info">Aceptar</button>
        </div>
     </div>
   </div>

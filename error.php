@@ -11,6 +11,6 @@
             Parece que andas perdido. :( Ven, regresemos a la página :)
             </a>
         </h1>   
-    <img style ="display:block;margin:0 auto; text-align:center" src="<?=$routes["img_content_error"]  ?>">    
+    <img alt="Error" style ="display:block;margin:0 auto; text-align:center" src="<?=$routes["img_content_error"]  ?>">    
     </body>
 </html>

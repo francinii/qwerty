@@ -67,3 +67,25 @@ function validarCorreo(valor){
       }
     return true;
 }
+
+
+function language(lang){
+    var data = {
+        "lang" : lang,
+    };
+    url =window.location.href;
+    $.ajax({
+        type:'POST',
+        url:url,            
+        dataType: "text", 
+        data:data,
+        success: function(response) {  
+            location.reload(true);           
+                          
+        },           
+        error: function() {
+                    
+        }
+    }); 
+
+}

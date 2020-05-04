@@ -1,3 +1,2 @@
-Sitemap: https:qwerty.co.cr/sitemap.xml
+Sitemap:https://www.qwerty.co.cr/sitemap.xml
 User-agent:*
-Disallow

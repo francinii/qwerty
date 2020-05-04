@@ -3,12 +3,13 @@
 <link rel="stylesheet" href="<?=$routes["link_normalize"]?>" >
 <link rel='stylesheet' href='<?= $routes["link_bootstrap"]?>'>
 <link rel="stylesheet" href="<?= $routes["css_main"]?>" type="text/css"/>
-<link rel="shortcut icon" type="image/ico" href="<?= $routes["img_content_favicon"] ?>">
+<link rel="shortcut icon" type="image/ico" href="<?= $routes["img_content_favicon"] ?>" alt ="Qwerty favicon">
+<link rel="apple-touch-icon" href="<?= $routes["img_content_favicon_apple"]?>" alt ="Qwerty favicon">
 <link href="<?= $routes["css_timeline"]?>" rel="stylesheet" type="text/css"/>
 
 <meta charset="UTF-8">      
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- <meta name="Description" CONTENT="Autor: Qwerty Costa Rica, Illustrador: Qwerty Costa Rica, Categoria: Empresa de Desarrollo de Software, Servicios: Desarrollo de software, aplicaciones móviles soluciones tecnológicas">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+ <meta name="Description" CONTENT="Qwerty Costa Rica, Servicios: Soluciones tecnológicas en desarrollo de Software en Costa Rica. ">
       
  
 <meta property="og:description" 

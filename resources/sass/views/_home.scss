@@ -6,6 +6,15 @@
   line-height : 30px;    
 }
 
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
+
+
 .row{
  // margin-left:0;
   margin-right:0;
@@ -22,6 +31,7 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 
 h3 {
   color:$font_color_caption;
@@ -62,6 +72,7 @@ p{
     }
 }
 
+
 .section_description{
   padding: 0px 0px 0px 0px;
   align-items: center;
@@ -69,11 +80,11 @@ p{
 }
 
 .section_clients {
-    padding: 0% 0 4% 0;
+    padding: 4% 0 8% 0;
 }
 
 .section_about{
-  padding: 10% 0 10% 0;
+  padding: 8% 0 8% 0;
   align-items: center;
    display: flex;
   img {
@@ -83,7 +94,7 @@ p{
 
 
 .section_contact{
-  padding: 8% 0 0% 0;
+  padding: 4% 0 0% 0;
   text-align: left;
 }
 
@@ -279,14 +290,13 @@ body {
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
+  
   margin-top: 5px;
 }
 
 .noscript  {
   margin: 0% 0% 0% 0%;
 }
-
 
 @keyframes floating {
   0% {		
@@ -307,6 +317,18 @@ body {
   }
 }
 
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: initial;
+  border-color: #337ab7;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: $color_secundary;
+  color: $font_color_light;
+  text-align: center;
+
+}
+
 @media (min-width:767.99px) {
   #portada_section_reducida{
     display: none;
@@ -314,7 +336,6 @@ body {
 }
 
 @media (max-width: 1199.98px) {
-
   .container-service-card{
     .service-card{
       height: 500px;
@@ -327,7 +348,6 @@ body {
     width: 280px;      
   }   
 }
-
 
 /* Landscape phone to portrait tablet  */
 @media (max-width: 767.98px) {
@@ -370,16 +390,19 @@ body {
       }
       h1, h2, p{
         color:white;
-      }
-      
+      }      
       .img_reducida img{
+          right: 30px;
+          margin-top: 10px;
           width: 180px;
       }
   } 
-
 }
 
+.intro  h2{
+  color: $font_color_light;
 
+}
 /* Landscape phones and down  */
 @media (max-width:  575.98px) {
   
@@ -396,8 +419,9 @@ body {
   }
 
   .page-footer{
+    margin-top: 5%;
     .footer-body{
-      padding: 8%;
+      padding: 8%;      
     }
   }  
   .container-service-card{

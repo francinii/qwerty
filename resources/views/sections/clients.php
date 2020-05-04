@@ -21,42 +21,42 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="col-xs-4">
-                        <a href="<?= $routes["link_cliente_1"]?>" target="_blank">
-                            <img src="<?= $routes["img_content_cliente_1"]?>" class="img-responsive" alt = "Clientes de Qwerty">
+                        <a href="<?= $routes["link_cliente_1"]?>" rel="noopener" target="_blank">
+                            <img data-src="<?= $routes["img_content_cliente_1"]?>" class="img-responsive lazyload "  alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
-                        <a href="<?=$routes["link_cliente_2"]?>" target="_blank">
-                            <img src="<?= $routes["img_content_cliente_2"]?>" class="img-responsive" alt = "Clientes de Qwerty">
+                        <a href="<?=$routes["link_cliente_2"]?>" rel="noopener" target="_blank">
+                            <img data-src="<?= $routes["img_content_cliente_2"]?>" class="img-responsive lazyload" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
-                        <a href="<?=$routes["link_cliente_3"]?>" target="_blank">
-                            <img src="<?= $routes["img_content_cliente_3"]?>" class="img-responsive" alt = "Clientes de Qwerty">
+                        <a href="<?=$routes["link_cliente_3"]?>" rel="noopener" target="_blank">
+                            <img data-src="<?= $routes["img_content_cliente_3"]?>" class="img-responsive lazyload" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
-                        <a href="<?=$routes["link_cliente_4"]?>" target="_blank">
-                            <img src="<?= $routes["img_content_cliente_4"]?>" class="img-responsive" alt = "Clientes de Qwerty">
+                        <a href="<?=$routes["link_cliente_4"]?>" rel="noopener" target="_blank">
+                            <img data-src="<?= $routes["img_content_cliente_4"]?>" class="img-responsive lazyload" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="col-xs-4">
-                        <a href="<?=$routes["link_cliente_5"]?>" target="_blank">
-                            <img src="<?= $routes["img_content_cliente_5"]?>" class="img-responsive" alt = "Clientes de Qwerty">
+                        <a href="<?=$routes["link_cliente_5"]?>" rel="noopener" target="_blank">
+                            <img data-src="<?= $routes["img_content_cliente_5"]?>" class="img-responsive lazyload" alt = "Clientes de Qwerty">
                         </a>
                     </div>
                 </div>
             </div>
-            <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-            <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left">&nbsp</i></a>
+            <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right">&nbsp</i></a>
         </div>
     </div>
 </div>
