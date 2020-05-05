@@ -24,7 +24,7 @@ if(isset($_SESSION['lang'])){
 }
 
 //Variable para determinar el ambiente: 1 ambiente de desarrollo activado
-$ambiente = 1;
+$ambiente = 0;
 
 $SERVER_URL = ($ambiente == 1 ) ? 'http://localhost/qwerty2/qwerty': 'https://www.qwerty.co.cr';
 const TEMPLATES_PATH = 'resources/views/templates';
@@ -106,7 +106,6 @@ $routes["link_cliente_3"] = '';
 $routes["link_cliente_4"] = 'https://www.ubrauliocarrillocr.com/';
 $routes["link_cliente_5"] = 'https://grupoathena.com/';
 
-
 $routes["link_facebook"] = ' https://www.facebook.com/Qwertycr/';
 $routes["link_map"] = 'https://goo.gl/maps/Gir14qbqqRw27SCH6';
 $routes["link_iframe_map"] ='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463.560607490681!2d-84.13443331317113!3d10.016640706749119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fa8f949763af%3A0x18282a97b2115af7!2sResidencial%20Puente%20Piedra%2C%20Heredia%20Province%2C%20San%20Roque!5e0!3m2!1sen!2scr!4v1586807182989!5m2!1sen!2scr';
@@ -121,6 +120,7 @@ $routes["css_animate"] = $SERVER_URL.'/resources/css/animate.min.css';
 $routes["css_carousel"] =  ($ambiente == 1 ) ?  $SERVER_URL.'/resources/css/carousel.css': $SERVER_URL.'/resources/css/carousel.min.css' ;
 //$routes["js_jquery"] = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js';
 //$routes["js_bootstrap"] =  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js';
+$routes["js_popper"] = $SERVER_URL.'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js';
 $routes["js_jquery"]  = ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/jquery-3.5.1.js':$SERVER_URL. '/resources/js/jquery-3.5.1.min.js';
 $routes["js_bootstrap_local"] = $SERVER_URL .'/lib/bootstrap-4.4.1/js/bootstrap.min.js';
 $routes["js_carousel"] =  ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/carousel.js':$SERVER_URL. '/resources/js/carousel.min.js';

@@ -238,6 +238,10 @@ body {
   font-size: 1.2rem;
 }
 
+.menu_collapsed {
+  text-align: left;
+}
+
 .section-circles {
   padding: 0% 0% 0% 0%;
 }

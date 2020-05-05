@@ -96,6 +96,7 @@ $vocab["contacto_como_llegar"]  = "Llegá con Waze";
 
 $vocab["contacto_numero"]  = "(+506) 2101-1868";
 $vocab["contacto_correo"]  = "info@qwerty.co.cr";
+$vocab["contacto_form_titulo"] = "Formulario de contacto";
 $vocab["contacto_form_titulo"]  = "¡Queremos conocer tu proyecto!";
 $vocab["contacto_form_nombre"]  = "Nombre";
 $vocab["contacto_form_correo"]  = "Correo";

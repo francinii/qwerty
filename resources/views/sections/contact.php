@@ -40,19 +40,19 @@
             <div class="form-group row">
               <label  class="col-sm-2 col-form-label"  for="nombre"><?= $vocab["contacto_form_nombre"] ?></label>
               <div class="col-md-10 col-12 ">
-                <input type="text" class="form-control" id="nombre" name= "nombre" placeholder="Nombre Completo"  required>
+                <input type="text" class="form-control" id="nombre" name= "nombre" placeholder="<?= $vocab["contacto_form_nombre"] ?>"  required>
               </div>
             </div>
             <div class="form-group row">
               <label  class="col-sm-2 col-form-label"  for="correo"><?= $vocab["contacto_form_correo"] ?></label>
               <div class="col-md-10 col-12 ">
-                <input type="email" class="form-control" id="correo" placeholder="Dirección de correo" name= "correo"  required>
+                <input type="email" class="form-control" id="correo" placeholder="<?= $vocab["contacto_form_correo"] ?>" name= "correo"  required>
               </div>
             </div>
             <div class="form-group row">
               <label  class="col-sm-2 col-form-label" for="mensaje"><?= $vocab["contacto_form_mensaje"] ?></label>
               <div class="col-md-10 col-12 ">
-                <textarea type="text" class="form-control" id="mensaje" placeholder="Mensaje" name= "mensaje"  required></textarea>
+                <textarea type="text" class="form-control" id="mensaje" placeholder="<?= $vocab["contacto_form_mensaje"] ?>" name= "mensaje"  required></textarea>
               </div>
             </div>              
             <div class="form-group row">
