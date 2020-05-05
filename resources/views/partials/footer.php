@@ -7,7 +7,7 @@
     </div>
     <div class="col-md-12 footer-body">
       <div class= "row">
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-12">
           <ul class="list-unstyled">
               <li style="padding: 5% 0 3% 0">
                 <img data-src="<?= $routes["img_content_logo_3"]?>" class="lazyload" alt = "Logo de Qwerty">               
@@ -41,30 +41,32 @@
               </li>           
             </ul> 
         </div>
-        <div class="col-md-6 col-xs-12">
-          <form class="form-horizontal" action="<?= $routes["pagina_inicio"]?>" method= 'POST'>
-            <h2>Formulario de contacto</h2>  
-                <div class="form-group">
-                  <label class=" col-md-3 col-xs-12 col-sm-12" for="nombre"><?= $vocab["contacto_form_nombre"] ?></label>
-                  <div class="col-md-9 col-xs-12 col-sm-12">
+        <div class="col-md-6 col-12">
+        <h2>Formulario de contacto</h2> 
+        <form class="form-horizontal" action="<?= $routes["pagina_inicio"]?>" method= 'POST'>
+                <div class="form-group row">
+                  <label  class="col-sm-2 col-form-label"  for="nombre"><?= $vocab["contacto_form_nombre"] ?></label>
+                  <div class="col-md-10 col-12 ">
                     <input type="text" class="form-control" id="nombre" name= "nombre" placeholder="Nombre Completo"  required>
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class=" col-md-3 col-xs-12 col-sm-12" for="correo"><?= $vocab["contacto_form_correo"] ?></label>
-                  <div class="col-md-9 col-xs-12 col-sm-12">
+                <div class="form-group row">
+                  <label  class="col-sm-2 col-form-label"  for="correo"><?= $vocab["contacto_form_correo"] ?></label>
+                  <div class="col-md-10 col-12 ">
                     <input type="email" class="form-control" id="correo" placeholder="Dirección de correo" name= "correo"  required>
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class=" col-md-3 col-xs-12 col-sm-12" for="mensaje"><?= $vocab["contacto_form_mensaje"] ?></label>
-                  <div class="col-md-9 col-xs-12 col-sm-12">
+                <div class="form-group row">
+                  <label  class="col-sm-2 col-form-label" for="mensaje"><?= $vocab["contacto_form_mensaje"] ?></label>
+                  <div class="col-md-10 col-12 ">
                     <textarea type="text" class="form-control" id="mensaje" placeholder="Mensaje" name= "mensaje"  required></textarea>
                   </div>
                 </div>              
-                <div class="form-group">
-                  <div class="col-sm-offset-3 col-sm-9">
-                    <button type="button" onclick ="enviarFormulario('<?=$SERVER_URL?>')" class="btn btn-info" aria-label ="<?= $vocab["contacto_titulo"] ?>" ><?= $vocab["contacto_titulo"] ?></button>
+                <div class="form-group row">
+                <label  class="col-sm-2 col-form-label" for="mensaje"></label>
+                
+                  <div class="col-md-10">
+                    <button type="button" onclick ="enviarFormulario('<?=$SERVER_URL?>')" class="btn btn-info" aria-label ="<?= $vocab["contacto_titulo"] ?>" aria-label="<?= $vocab["contacto_titulo"] ?>"><?= $vocab["contacto_titulo"] ?></button>
                   </div>
                 </div>
             </form> 

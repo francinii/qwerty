@@ -111,17 +111,18 @@ $routes["link_facebook"] = ' https://www.facebook.com/Qwertycr/';
 $routes["link_map"] = 'https://goo.gl/maps/Gir14qbqqRw27SCH6';
 $routes["link_iframe_map"] ='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463.560607490681!2d-84.13443331317113!3d10.016640706749119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fa8f949763af%3A0x18282a97b2115af7!2sResidencial%20Puente%20Piedra%2C%20Heredia%20Province%2C%20San%20Roque!5e0!3m2!1sen!2scr!4v1586807182989!5m2!1sen!2scr';
 $routes["link_normalize"] = 'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css';
-$routes["link_bootstrap"] ='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css';
+
+//$routes["link_bootstrap"] ='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css';
 $routes["link_waze"] ='https://www.waze.com/es/livemap/directions?latlng=10.0168732%2C-84.1334595';
-
-
-$routes["librerias_bootstrap"] = $SERVER_URL. '/lib/bootstrap/css/bootstrap.min.css';
+$routes["librerias_bootstrap"] = $SERVER_URL. '/lib/bootstrap-4.4.1/css/bootstrap.min.css';
 $routes["css_main"] = ($ambiente == 1 ) ?  $SERVER_URL.'/resources/css/main.css' : $SERVER_URL.'/resources/css/main.min.css';
 $routes["css_timeline"] =  ($ambiente == 1 ) ?  $SERVER_URL.'/resources/css/lineaTiempo.css': $SERVER_URL.'/resources/css/lineaTiempo.min.css';
 $routes["css_animate"] = $SERVER_URL.'/resources/css/animate.min.css';
-$routes["js_jquery"] = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js';
-$routes["js_bootstrap"] =  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js';
-$routes["js_bootstrap_local"] = $SERVER_URL .'/lib/bootstrap/js/bootstrap.min.js';
+$routes["css_carousel"] =  ($ambiente == 1 ) ?  $SERVER_URL.'/resources/css/carousel.css': $SERVER_URL.'/resources/css/carousel.min.css' ;
+//$routes["js_jquery"] = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js';
+//$routes["js_bootstrap"] =  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js';
+$routes["js_jquery"]  = ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/jquery-3.5.1.js':$SERVER_URL. '/resources/js/jquery-3.5.1.min.js';
+$routes["js_bootstrap_local"] = $SERVER_URL .'/lib/bootstrap-4.4.1/js/bootstrap.min.js';
 $routes["js_carousel"] =  ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/carousel.js':$SERVER_URL. '/resources/js/carousel.min.js';
 $routes["js_timeline"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/timeline.js': $SERVER_URL. '/resources/js/timeline.min.js' ;
 $routes["js_form"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/form.js': $SERVER_URL. '/resources/js/form.min.js' ;

@@ -1,8 +1,10 @@
 
 <link href="<?= $routes["librerias_bootstrap"] ?>" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="<?=$routes["link_normalize"]?>" >
-<link rel='stylesheet' href='<?= $routes["link_bootstrap"]?>'>
+
 <link rel="stylesheet" href="<?= $routes["css_main"]?>" type="text/css"/>
+<link rel="stylesheet" href="<?= $routes["css_carousel"] ?>" type="text/css"/>
+
 <link rel="shortcut icon" type="image/ico" href="<?= $routes["img_content_favicon"] ?>" alt ="Qwerty favicon">
 <link rel="apple-touch-icon" href="<?= $routes["img_content_favicon_apple"]?>" alt ="Qwerty favicon">
 <link href="<?= $routes["css_timeline"]?>" rel="stylesheet" type="text/css"/>

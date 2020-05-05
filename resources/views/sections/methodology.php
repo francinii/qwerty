@@ -3,8 +3,8 @@
         <img src="<?= $routes["img_layout_frame_4"]?>" alt ="">        
     </div>
 </div>
-<div class="row methodology-container "> 
-    <div class="col-sm-offset-1   col-sm-10 ">     
+<div class="row justify-content-center methodology-container "> 
+    <div class="col-sm-10 ">     
         <section class="intro">
             <div class="container">
                 <h2 class="element-fade-in in-view animated color-light"><?= $vocab["metodologia_titulo"] ?></h2>

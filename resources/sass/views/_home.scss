@@ -32,7 +32,6 @@ h2 {
     font-weight: bold;
 }
 
-
 h3 {
   color:$font_color_caption;
   font-size: 1.25rem;
@@ -47,6 +46,7 @@ p{
   li {
     a:hover{
       background-color: $color_secundary;
+      text-decoration: initial;
     }
     a:visited{
       background-color: $color_secundary;
@@ -329,6 +329,15 @@ body {
 
 }
 
+.nav > li > a {
+  padding: 10px 15px 10px 15px;
+}
+
+
+.dropdown-menu {
+  border: initial;
+}
+
 @media (min-width:767.99px) {
   #portada_section_reducida{
     display: none;
@@ -440,5 +449,4 @@ body {
     -webkit-transform: none !important;
     transform: none !important;
   }
-
 }
