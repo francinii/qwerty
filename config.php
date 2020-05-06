@@ -1,9 +1,7 @@
 <?php
-session_start();
- 
-//verificamos si hay cambios de lenguaje mediante POST
 if(isset($_POST["lang"])){
   $lang = $_POST["lang"];
+  
   if(!empty($lang)){
     $_SESSION["lang"] = $lang;
   }
@@ -120,7 +118,7 @@ $routes["css_animate"] = $SERVER_URL.'/resources/css/animate.min.css';
 $routes["css_carousel"] =  ($ambiente == 1 ) ?  $SERVER_URL.'/resources/css/carousel.css': $SERVER_URL.'/resources/css/carousel.min.css' ;
 //$routes["js_jquery"] = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js';
 //$routes["js_bootstrap"] =  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js';
-$routes["js_popper"] = $SERVER_URL.'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js';
+$routes["js_popper"] ='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js';
 $routes["js_jquery"]  = ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/jquery-3.5.1.js':$SERVER_URL. '/resources/js/jquery-3.5.1.min.js';
 $routes["js_bootstrap_local"] = $SERVER_URL .'/lib/bootstrap-4.4.1/js/bootstrap.min.js';
 $routes["js_carousel"] =  ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/carousel.js':$SERVER_URL. '/resources/js/carousel.min.js';
@@ -133,5 +131,4 @@ $routes["js_lazy_load"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/lazy-
 */
 ini_set("error_reporting", "true");
 error_reporting(E_ALL| E_STRICT);
- 
 ?>

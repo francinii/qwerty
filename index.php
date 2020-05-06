@@ -1,3 +1,6 @@
+<?
+session_start();
+?>
 <!DOCTYPE html>
 <html  lang="es">
     <head>   
@@ -11,7 +14,8 @@
         </script>
      
         <title>Qwerty Costa Rica</title>
-        <?php 
+        <?php
+       
             include('config.php');
             include('includes.php');            
         ?>        
