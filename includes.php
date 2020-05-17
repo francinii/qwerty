@@ -1,6 +1,6 @@
 
 <link href="<?= $routes["librerias_bootstrap"] ?>" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="<?=$routes["link_normalize"]?>" >
+<!--<link rel="stylesheet" href="$routes["link_normalize"]?>" > -->
 
 <link rel="stylesheet" href="<?= $routes["css_main"]?>" type="text/css"/>
 <link rel="stylesheet" href="<?= $routes["css_carousel"] ?>" type="text/css"/>

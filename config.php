@@ -1,7 +1,9 @@
 <?php
+//session_start();
+$lang ='es';
+//verificamos si hay cambios de lenguaje mediante POST
 if(isset($_POST["lang"])){
   $lang = $_POST["lang"];
-  
   if(!empty($lang)){
     $_SESSION["lang"] = $lang;
   }
@@ -15,8 +17,7 @@ if(isset($_SESSION['lang'])){
         include('resources/lang/en/lang.php');
     }else {
         include('resources/lang/es/lang.php');
-    }
-    
+    }    
 }else{
     include('resources/lang/es/lang.php');
 }
@@ -36,11 +37,12 @@ $routes["pagina_servicios"] = $SERVER_URL . '/servicios';
 $routes["pagina_contacto"] = $SERVER_URL . '/contacto';
 $routes["pagina_home"] = TEMPLATES_PATH. '/home.php';
 
-
 $routes["seccion_metodologia"] = SECTIONS_PATH. '/methodology.php';
 $routes["seccion_acerca"] = SECTIONS_PATH. '/about.php';
 $routes["seccion_clientes"] = SECTIONS_PATH. '/clients.php';
 $routes["seccion_servicios"] = SECTIONS_PATH. '/services.php';
+$routes["seccion_servicios_detalles"] = SECTIONS_PATH. '/services_details.php';
+
 $routes["seccion_header"] = SECTIONS_PATH. '/header.php';
 $routes["seccion_header_section"] = SECTIONS_PATH. '/header_section.php';
 $routes["seccion_descripcion"] = SECTIONS_PATH . "/description.php";
@@ -49,6 +51,7 @@ $routes["seccion_contacto"] =  SECTIONS_PATH. '/contact.php';
 $routes["seccion_footer"] = PARTIALS_PATH. '/footer.php';
 $routes["seccion_error"] = $SERVER_URL. '/error.php';
 $routes["seccion_alert"] = PARTIALS_PATH. '/alert.php';
+$routes["seccion_team"] = SECTIONS_PATH. '/team.php';
 
 $routes["img_content_logo"] =  $SERVER_URL . '/img/content/logo2.svg';
 $routes["img_content_logo_2"] =  $SERVER_URL . '/img/content/logo3.svg';
@@ -61,6 +64,7 @@ $routes["img_content_direccion"] =  $SERVER_URL . '/img/content/direccion.svg';
 $routes["img_content_correo"] =  $SERVER_URL . '/img/content/correo.svg';
 $routes["img_content_telefono"] =  $SERVER_URL . '/img/content/tel.svg';
 $routes["img_content_facebook"] =  $SERVER_URL . '/img/content/facebook.svg';
+$routes["img_content_linkedin"] =  $SERVER_URL . '/img/content/linkedin.svg';
 $routes["img_content_waze"] =  $SERVER_URL . '/img/content/waze.svg';
 $routes["img_content_cliente_1"] =  $SERVER_URL . '/img/content/cliente1.svg';
 $routes["img_content_cliente_2"] =  $SERVER_URL . '/img/content/cliente2.svg';
@@ -90,6 +94,27 @@ $routes["img_content_mision"] =  $SERVER_URL . '/img/content/mision.svg';
 $routes["img_content_vision"] =  $SERVER_URL . '/img/content/vision.svg';
 $routes["img_content_clientes"] =  $SERVER_URL . '/img/content/clientes.svg';
 
+$routes["img_content_servicios_disenio"] = $SERVER_URL. '/img/content/disenio-web.svg';
+$routes["img_content_servicios_desarrollo"] = $SERVER_URL. '/img/content/desarrollo-web.svg';
+$routes["img_content_servicios_ecommerce"] = $SERVER_URL. '/img/content/desarrollo-ecommerce.svg';
+
+
+$routes["img_team_1"] =  $SERVER_URL . '/img/content/fran.svg';
+$routes["img_team_2"] =  $SERVER_URL . '/img/content/andrey.svg';
+$routes["img_team_3"] =  $SERVER_URL . '/img/content/alex.svg';
+$routes["img_team_4"] =  $SERVER_URL . '/img/content/steven.svg';
+$routes["img_team_5"] =  $SERVER_URL . '/img/content/danny.svg';
+
+$routes["social_linkedin_team_1"] =  'https://www.linkedin.com/in/francini-corrales-garro/';
+$routes["social_linkedin_team_2"] =  'https://www.linkedin.com/in/andrey-corrales-garro-3820a1184/';
+$routes["social_linkedin_team_3"] =  '/img/content/danny.svg';
+$routes["social_linkedin_team_4"] =  'https://www.linkedin.com/in/steven-rodriguez-garro-487668136/';
+$routes["social_linkedin_team_5"] =  'https://www.linkedin.com/in/danny-valerio-ram%C3%ADrez-816312162/';
+
+
+
+
+
 $routes["img_layout_frame_1"] =  $SERVER_URL . '/img/layout/header_section.svg';
 $routes["img_layout_frame_2"] =  $SERVER_URL . '/img/layout/header.svg';
 $routes["img_layout_frame_3"] =  $SERVER_URL . '/img/layout/frame3.svg';
@@ -118,7 +143,7 @@ $routes["css_animate"] = $SERVER_URL.'/resources/css/animate.min.css';
 $routes["css_carousel"] =  ($ambiente == 1 ) ?  $SERVER_URL.'/resources/css/carousel.css': $SERVER_URL.'/resources/css/carousel.min.css' ;
 //$routes["js_jquery"] = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js';
 //$routes["js_bootstrap"] =  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js';
-$routes["js_popper"] ='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js';
+$routes["js_popper"] = 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js';
 $routes["js_jquery"]  = ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/jquery-3.5.1.js':$SERVER_URL. '/resources/js/jquery-3.5.1.min.js';
 $routes["js_bootstrap_local"] = $SERVER_URL .'/lib/bootstrap-4.4.1/js/bootstrap.min.js';
 $routes["js_carousel"] =  ($ambiente == 1 ) ? $SERVER_URL. '/resources/js/carousel.js':$SERVER_URL. '/resources/js/carousel.min.js';
@@ -126,9 +151,11 @@ $routes["js_timeline"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/timeli
 $routes["js_form"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/form.js': $SERVER_URL. '/resources/js/form.min.js' ;
 $routes["js_lazy_load"] = ($ambiente == 1 ) ?  $SERVER_URL. '/resources/js/lazy-load.min.js': $SERVER_URL. '/resources/js/lazy-load.min.js' ;
 
+
 /*
     Error reporting.
 */
 ini_set("error_reporting", "true");
 error_reporting(E_ALL| E_STRICT);
+ 
 ?>

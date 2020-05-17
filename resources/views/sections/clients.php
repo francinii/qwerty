@@ -10,15 +10,12 @@
       </div>                        
 </div>
 
-<div class="row section_client_title section_clients">
-    <div class="col-md-12">
-        <h2 class=""> 
+<div class="row mx-auto justify-content-center my-auto section_client_title section_clients">
+    <div class="col-md-12 col-10 ">
+        <h2> 
              <?= $vocab["clientes_titulo_2"] ?>
         </h2>
     </div>
-</div>
-
-<div class="row mx-auto justify-content-center my-auto">
     <div class="col-9 ">
         <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
@@ -32,7 +29,7 @@
                 <div class="carousel-item">
                     <div class="col-lg-4 col-md-6">
                     <a href="<?= $routes["link_cliente_2"]?>" rel="noopener" target="_blank">
-                        <img data-src="<?= $routes["img_content_cliente_2"]?>" class="img-fluid lazyload "  alt = "Clientes de Qwerty">
+                        <img data-src="<?= $routes["img_content_cliente_2"]?>" class="img-fluid lazyload"  alt = "Clientes de Qwerty">
                     </a>
                     </div>
                 </div>

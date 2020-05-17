@@ -1,10 +1,11 @@
 .conocer_proyecto{
     background-color: $color_principal;
-    padding: 5%;
+    padding: 5% 3% 5% 3%;
     border-bottom: 10px solid #1f729e;
     
     h3{
         color: $font_color_light;
+        padding: 15px 15px 15px 15px;
     }
 }
 
@@ -15,7 +16,6 @@
 }
 
 .page-footer{
-    margin-top: 10%;
     background-color: $color_dark;
     color: $font_color_light;    
     a {
@@ -28,7 +28,7 @@
     .footer-body{
         background-color: $color_dark_light;
         text-align: left;
-        padding: 3% 3% 3% 5%;
+        padding: 3% 3% 3% 3%;
     }
 
     h5{
@@ -38,6 +38,7 @@
 
 .footer-copyright{
     background-color: $color_dark;
+    padding: 15px 15px 15px 15px;
 }
 
 

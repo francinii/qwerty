@@ -1,6 +1,4 @@
-<?
-session_start();
-?>
+<? session_start(); ?>
 <!DOCTYPE html>
 <html  lang="es">
     <head>   
@@ -13,9 +11,8 @@ session_start();
         gtag('config', 'UA-165121308-1');
         </script>
      
-        <title>Qwerty Costa Rica</title>
-        <?php
-       
+        <title>Qwerty Costa Rica | Empresa de desarrollo de software</title>
+        <?php 
             include('config.php');
             include('includes.php');            
         ?>        
@@ -24,7 +21,7 @@ session_start();
     <body>      
         <?php include($routes["pagina_home"]); ?>    
         <script src="<?= $routes["js_jquery"] ?>"></script>
-        <script src="<?= $routes["js_popper"]?>" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <!-- <script src="  //$routes["js_popper"]" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
         <script src="<?= $routes["js_bootstrap_local"] ?>" type="text/javascript"></script>       
         <script src="<?= $routes["js_carousel"] ?>" type="text/javascript"></script>
         <script src="<?= $routes["js_timeline"] ?>" type="text/javascript"></script>   

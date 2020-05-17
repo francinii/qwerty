@@ -1,4 +1,5 @@
-function enviarFormulario(url){
+function enviarFormulario(url,lang){
+    lang = (lang == "") ? 'es': lang;
     var nombre = $("#nombre").val();
     var correo = $("#correo").val();
     var mensaje = $("#mensaje").val();    
@@ -16,27 +17,25 @@ function enviarFormulario(url){
         $.ajax({
             type:'POST',
             url: url,            
-            dataType: "text", 
+            dataType: "json", //text
             data:data,
             success: function(response) {              
             //  alert(response);                         
-                  if(response == 1){                  
-                      $('#tituloMensaje').text("Enviado correctamente");
-                      $('#mensaje1').text("¡Gracias por contactarnos!");
-                      $('#mensaje2').text("¡Nos pondremos en contacto muy pronto!");
-                      $('#modal_alert').modal("show");                     
-
-                  }else {
-                      $('#tituloMensaje').text("Oops, ha ocurrido un error");
-                      $('#mensaje1').text("¡Parece que tu mensaje no ha podido ser enviado!");
-                      $('#mensaje2').text("");
-                      $('#modal_alert').modal("show");         
+                if(response == 1){                  
+                      (lang == 'es') ? $('#tituloMensaje').text("Enviado correctamente"):$('#tituloMensaje').text("The message has been sent successfully.");
+                      (lang == 'es') ? $('#mensaje1').text("¡Gracias por contactarnos!"):$$('#mensaje1').text("Thank you for contact us!");
+                      (lang == 'es') ? $('#mensaje2').text("¡Nos pondremos en contacto muy pronto!"):$('#mensaje2').text("We get in touch soon.");
+                      $('#modal_alert').modal("show");     
+                }else {
+                    (lang == 'es') ? $('#tituloMensaje').text("Oops, ha ocurrido un error"):$('#tituloMensaje').text("Oops, an error has occurred ");
+                    (lang == 'es') ? $('#mensaje1').text("¡Parece que tu mensaje no ha podido ser enviado!"):$('#mensaje1').text("It seems that your message was not sent correctly!");
+                    $('#mensaje2').text("");
+                    $('#modal_alert').modal("show");         
                   }                       
-            },           
-            
+            },          
             error: function() {
-                $('#tituloMensaje').text("Oops, ha ocurrido un error");
-                $('#mensaje1').text("¡Parece que tu mensaje no ha podido ser enviado!");
+                (lang == 'es') ? $('#tituloMensaje').text("Oops, ha ocurrido un error"):$('#tituloMensaje').text("Oops, an error has occurred ");
+                (lang == 'es') ? $('#mensaje1').text("¡Parece que tu mensaje no ha podido ser enviado!"):$('#mensaje1').text("It seems that your message was not sent correctly!");
                 $('#mensaje2').text("");
                 $('#modal_alert').modal("show");           
             }
@@ -47,10 +46,10 @@ function enviarFormulario(url){
         $("#mensaje").val("");
 
     }  else {
-        $('#tituloMensaje').text("Los datos ingresados son incorrectos");
-                $('#mensaje1').text("¡Verifique que los datos ingresaso sean correctos, sin espacios vacíos, y con un formato de correo válido!");
-                $('#mensaje2').text("");
-                $('#modal_alert').modal("show"); 
+        (lang == 'es') ?   $('#tituloMensaje').text("Los datos ingresados son incorrectos"): $('#tituloMensaje').text("The data is incorrect");
+        (lang == 'es') ?    $('#mensaje1').text("¡Verifique que los datos ingresaso sean correctos, sin espacios vacíos, y con un formato de correo válido!") : $('#mensaje1').text("Verify the information is correct, without empty inputs, and with a valid mail format!");
+        $('#mensaje2').text("");
+        $('#modal_alert').modal("show"); 
         }
 }
 
@@ -61,6 +60,7 @@ function validarVacio(valor) {
     }
       return true;
 }
+
 function validarCorreo(valor){
     if( !(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(valor)) ) {
         return false;

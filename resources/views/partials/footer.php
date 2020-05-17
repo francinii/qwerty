@@ -47,26 +47,26 @@
                 <div class="form-group row">
                   <label  class="col-sm-2 col-form-label"  for="nombre"><?= $vocab["contacto_form_nombre"] ?></label>
                   <div class="col-md-10 col-12 ">
-                    <input type="text" class="form-control" id="nombre" name= "nombre" placeholder="<?= $vocab["contacto_form_nombre"] ?>"  required>
+                    <input type="text" class="form-control" id="nombre" name= "nombre" placeholder="<?= $vocab["contacto_form_nombre"] ?>" >
                   </div>
                 </div>
                 <div class="form-group row">
                   <label  class="col-sm-2 col-form-label"  for="correo"><?= $vocab["contacto_form_correo"] ?></label>
                   <div class="col-md-10 col-12 ">
-                    <input type="email" class="form-control" id="correo" placeholder="<?= $vocab["contacto_form_correo"] ?>" name= "correo"  required>
+                    <input type="email" class="form-control" id="correo" placeholder="<?= $vocab["contacto_form_correo"] ?>" name= "correo" >
                   </div>
                 </div>
                 <div class="form-group row">
                   <label  class="col-sm-2 col-form-label" for="mensaje"><?= $vocab["contacto_form_mensaje"] ?></label>
                   <div class="col-md-10 col-12 ">
-                    <textarea type="text" class="form-control" id="mensaje" placeholder="<?= $vocab["contacto_form_mensaje"] ?>" name= "mensaje"  required></textarea>
+                    <textarea type="text" class="form-control" id="mensaje" placeholder="<?= $vocab["contacto_form_mensaje"] ?>" name= "mensaje" ></textarea>
                   </div>
                 </div>              
                 <div class="form-group row">
                 <label  class="col-sm-2 col-form-label" for="mensaje"></label>
                 
                   <div class="col-md-10">
-                    <button type="button" onclick ="enviarFormulario('<?=$SERVER_URL?>')" class="btn btn-info" aria-label ="<?= $vocab["contacto_titulo"] ?>" aria-label="<?= $vocab["contacto_titulo"] ?>"><?= $vocab["contacto_titulo"] ?></button>
+                    <button type="button" onclick ="enviarFormulario('<?=$SERVER_URL?>', '<?=$lang?>')" class="btn btn-info" aria-label ="<?= $vocab["contacto_titulo"] ?>" aria-label="<?= $vocab["contacto_titulo"] ?>"><?= $vocab["contacto_titulo"] ?></button>
                   </div>
                 </div>
             </form> 

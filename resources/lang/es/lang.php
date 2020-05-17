@@ -12,7 +12,7 @@ $vocab["menu_lang_es"]         = "Español";
 
 //************ Titulos
 $vocab["titulo_clientes"] = "Nuestros Clientes";
-
+$vocab["btn-success"]  = 'Accept';
 
 //***************************** Seccion Descripcion *********************************//
 
@@ -157,3 +157,47 @@ $vocab["keyword_11"]  = "Ingeniería de software";
 $vocab["keyword_12"]  = "Software de sistema";
 $vocab["keyword_13"]  = "Desarrollo de sistemas";
 $vocab["keyword_14"]  = "Metodologías agiles";
+
+
+//***************************** Seccion Servicios Detallados *********************************//
+$vocab["detalle_servicio_titulo1"]  = "Diseño y desarrollo de sitios web";
+$vocab["detalle_servicio_titulo2"]  = "Desarrollo de aplicaciones web y móviles";
+$vocab["detalle_servicio_titulo3"]  = "Diseño y desarrollo de e-commerce";
+
+$vocab["detalle_servicio_1"]  = "Diseño de páginas web responsive.";
+$vocab["detalle_servicio_2"]  = "Utilizamos herramientas de programación acorde a las tendencias del mercado.";
+$vocab["detalle_servicio_3"]  = "Aplicamos metodologías ágiles de desarrollo como SCRUM para la entrega oportuna de productos funcionales.";
+$vocab["detalle_servicio_4"]  = "Buscamos soluciones que se ajusten a sus requerimientos, por esto, antes de iniciar con el proyecto realizamos un análisis de su negocio. Con esto garantizamos que nuestro equipo de trabajo interiorice el sentido de su marca.  ";
+$vocab["detalle_servicio_5"]  = "Posicionamiento SEO. Mejoramos la visibilidad de tu web por medio de posicionamiento SEO. Guiamos el proceso para que tu página aparezca entre los primeros resultados de las búsquedas en Google.  ";
+$vocab["detalle_servicio_6"]  = "Agrupamos tu idea de negocio en una lista de requerimientos,que nos permitirá brindarte entregables de productos funcionales en cortos periodos de tiempo. ";
+$vocab["detalle_servicio_7"]  = "Desarrollamos aplicaciones tanto para dispositivos móviles Android y IOS como aplicaciones web adaptables a diversas pantallas. ";
+$vocab["detalle_servicio_8"]  = "Realizamos software a la medida. Logramos que el software se ajuste a las necesidades de tu negocio. ";
+$vocab["detalle_servicio_9"]  = "Durante todo el proceso de desarrollo mantenemos una comunicación activa con nuestros clientes. Además, realizamos un seguimiento de las soluciones de software que entregamos.";
+$vocab["detalle_servicio_10"]  = " Desarrollamos comercios electrónicos que cuentan con áreas administrables para que pueda gestionar su inventario, catálogo de productos, pedidos, envíos y demás.";
+$vocab["detalle_servicio_11"]  = " Seguridad en las transferencias por medio de sistemas como Paypal.";
+$vocab["detalle_servicio_12"]  = " Uso de herramientas de e-commerce acorde a las tendencias del mercado.";
+
+$vocab["detalle_servicio_titulo_quote1"]  = '"En Qwerty nos encargamos de diseñar sitios web
+                                        a la medida que respondan a los requerimientos de tu 
+                                        negocio  y que reflejen la esencia de su marca".';
+
+$vocab["detalle_servicio_titulo_quote2"]  = '"Agrupamos tu idea de negocio en una lista de requerimientos,
+                                            que nos permitirá brindarle entregables de productos funcionales
+                                            en cortos periodos de tiempo".';
+
+//***************************** Seccion Equipo de trabajo *********************************//
+$vocab["team_1"] = "Francini Corrales";
+$vocab["team_2"] = "Andrey Corrales";
+$vocab["team_3"] = "Melber Corrales";
+$vocab["team_4"] = "Steven Rodríguez";
+$vocab["team_5"] = "Danny Valerio";
+
+$vocab["team_title"] = "Nuestro equipo de trabajo";
+$vocab["team_cargo_1"] = "Desarrolladora Back-End";
+$vocab["team_cargo_2"] = "Desarrollador Back-End";
+$vocab["team_cargo_3"] = "Consultor Financiero";
+$vocab["team_cargo_4"] = "Desarrollador Front-End";
+$vocab["team_cargo_5"] = "Desarrollador Front-End";
+
+$vocab["team_redes_title"] = "Redes sociales";
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   background-color: #1f729e;
 }
@@ -11,11 +12,12 @@
 
 .conocer_proyecto {
   background-color: #24A6EC;
-  padding: 5%;
+  padding: 5% 3% 5% 3%;
   border-bottom: 10px solid #1f729e;
 }
 .conocer_proyecto h3 {
   color: #fff;
+  padding: 15px 15px 15px 15px;
 }
 
 .frame_footer img {
@@ -23,7 +25,6 @@
 }
 
 .page-footer {
-  margin-top: 10%;
   background-color: #1f2529;
   color: #fff;
 }
@@ -36,7 +37,7 @@
 .page-footer .footer-body {
   background-color: #2b3338;
   text-align: left;
-  padding: 3% 3% 3% 5%;
+  padding: 3% 3% 3% 3%;
 }
 .page-footer h5 {
   color: #1d9fe5;
@@ -44,6 +45,7 @@
 
 .footer-copyright {
   background-color: #1f2529;
+  padding: 15px 15px 15px 15px;
 }
 
 *, html, body, .container-fluid {
@@ -84,7 +86,7 @@ h3 {
 
 p {
   color: #424242;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .nav li a:hover {
@@ -118,9 +120,19 @@ p {
   align-items: center;
   display: flex;
 }
+.section_description img {
+  padding: 10% 0% 10% 0%;
+}
 
 .section_clients {
-  padding: 4% 0 8% 0;
+  padding: 1% 0 3% 0;
+}
+.section_clients img {
+  padding: 8% 0 15% 0;
+}
+
+.section_about:nth-child(even) {
+  text-align: right;
 }
 
 .section_about {
@@ -129,7 +141,7 @@ p {
   display: flex;
 }
 .section_about img {
-  padding: 0% 5% 0% 5%;
+  padding: 8% 5% 8% 5%;
 }
 
 .section_contact {
@@ -222,6 +234,7 @@ body {
 
 .container-service-card {
   height: auto;
+  padding: 10% 0% 10% 0%;
 }
 .container-service-card .service-card {
   height: 100%;
@@ -229,12 +242,13 @@ body {
 .container-service-card .service-card img {
   display: block;
   margin: auto;
+  width: 50%;
 }
 .container-service-card .service-card .informacion-circulo {
-  padding: 0px 0px 0px 0px;
+  padding: 0px 8% 0px 8%;
   text-align: center;
 }
-.container-service-card .service-card .informacion-circulo p {
+.container-service-card .service-card .informacion-circulo h2 {
   font-size: 1.2rem;
 }
 
@@ -369,6 +383,10 @@ body {
 }
 /* Landscape phone to portrait tablet  */
 @media (max-width: 767.98px) {
+  .section-services-details {
+    text-align: left;
+  }
+
   nav .menu_collapsed {
     width: 100%;
   }
@@ -378,11 +396,6 @@ body {
 
   .container-service-card .service-card {
     height: 500px;
-  }
-
-  .container-fluid {
-    text-align: center;
-    overflow-x: hidden;
   }
 
   #portada_expandida {
@@ -395,7 +408,6 @@ body {
 
   #portada_section_reducida {
     display: block !important;
-    height: 250px;
   }
 
   #portada_reducida {
@@ -417,6 +429,13 @@ body {
     margin-top: 10px;
     width: 180px;
   }
+
+  .page-footer {
+    margin-top: 5%;
+  }
+  .page-footer .footer-body {
+    padding: 8% 2% 8% 12%;
+  }
 }
 .intro h2 {
   color: #fff;
@@ -424,6 +443,15 @@ body {
 
 /* Landscape phones and down  */
 @media (max-width: 575.98px) {
+  .section-team h2 {
+    padding-bottom: 10% !important;
+  }
+
+  .section_service_website .service_website h3 {
+    font-size: 1rem !important;
+    line-height: 2rem !important;
+  }
+
   nav .menu_collapsed {
     width: 100%;
   }
@@ -434,13 +462,6 @@ body {
   .section_description {
     text-align: center;
     padding: 4%;
-  }
-
-  .page-footer {
-    margin-top: 5%;
-  }
-  .page-footer .footer-body {
-    padding: 8%;
   }
 
   .container-service-card .service-card {
@@ -456,6 +477,128 @@ body {
     -webkit-transform: none !important;
     transform: none !important;
   }
+}
+.section-team {
+  padding: 10% 0% 10% 0%;
+  background-color: #24A6EC;
+  /* Flip card */
+}
+.section-team h2 {
+  color: #fff;
+  padding-bottom: 2%;
+}
+.section-team figure {
+  margin: 0;
+}
+.section-team .card-flip {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 25%;
+  min-height: 200px;
+}
+.section-team .card-flip .card {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.section-team .card-flip .card:first-of-type {
+  tranform: rotateY(0deg);
+}
+.section-team .card-flip .card:last-of-type {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+.section-team .card-flip:hover .card:first-of-type {
+  transform: rotateY(-180deg);
+}
+.section-team .card-flip:hover .card:last-of-type {
+  transform: rotateY(0deg);
+}
+.section-team .card-team-text {
+  position: relative;
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.section-team .card-team-text h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1d9fe5;
+}
+.section-team .card-team-text h4 {
+  font-size: 0.9rem;
+}
+.section-team .card-team {
+  margin-bottom: 20%;
+  min-height: 210px;
+}
+.section-team .card-team img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 120px;
+}
+
+.section-services-details {
+  padding: 8% 0% 8% 0%;
+}
+.section-services-details img {
+  padding: 4% 0% 4% 0%;
+}
+.section-services-details ul {
+  list-style: none;
+  /* Remove default bullets */
+}
+.section-services-details ul li::before {
+  content: "•";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #1d9fe5;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+  font-size: 2rem;
+}
+.section-services-details ul h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1d9fe5;
+  line-height: 2rem;
+}
+
+.section_service_website {
+  background-color: #1f729e;
+  padding: 3% 0% 3% 0%;
+}
+.section_service_website .service_website {
+  padding: 5% 5% 5% 5%;
+  opacity: 0.9;
+  text-align: center;
+}
+.section_service_website .service_website h3 {
+  color: #fff;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -39,8 +39,9 @@ h3 {
 
 p{
   color:$font_color_caption;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
+
 
 .nav {
   li {
@@ -77,18 +78,29 @@ p{
   padding: 0px 0px 0px 0px;
   align-items: center;
    display: flex;
+   img {
+    padding: 10% 0% 10% 0%;  
+  } 
+   
 }
 
 .section_clients {
-    padding: 4% 0 8% 0;
+    padding: 1% 0 3% 0;
+    img {
+      padding: 8% 0 15% 0;
+    }
 }
 
+.section_about:nth-child(even){
+  text-align: right;
+}
 .section_about{
   padding: 8% 0 8% 0;
   align-items: center;
    display: flex;
+  
   img {
-    padding: 0% 5% 0% 5%;
+    padding: 8% 5% 8% 5%;
   }
 }
 
@@ -115,8 +127,6 @@ p{
         font-size: larger;
     }
 }
-
-
 
 
 // Estilos para el carrusel Carrusel 
@@ -207,21 +217,25 @@ body {
 //Para los valores 
 .container-service-card{
   height: auto;
-      .service-card {
+  padding: 10% 0% 10% 0%;
+    .service-card {
       height: 100%;
       img {
         display:block;
-        margin:auto;   
+        margin:auto;  
+        width: 50%; 
       }
       .informacion-circulo {
-        padding: 0px 0px 0px 0px;
+        padding: 0px 8% 0px 8%;
         text-align:center;
-        p{
+        h2 {
           font-size: 1.2rem;
-        }  
+        }
+         
       }
     }
 }
+
 
 .menu_collapsed {
   text-align: left;
@@ -292,8 +306,7 @@ body {
   animation-name: floating;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  
+  animation-timing-function: ease-in-out;  
   margin-top: 5px;
 }
 
@@ -363,6 +376,10 @@ body {
 
 /* Landscape phone to portrait tablet  */
 @media (max-width: 767.98px) {
+
+  .section-services-details{
+    text-align: left;
+  }
   nav .menu_collapsed{
       width: 100%;
       button {
@@ -374,10 +391,7 @@ body {
       height: 500px;
     }
   }
-  .container-fluid{
-    text-align: center;
-    overflow-x: hidden;
-  }
+ 
 
   #portada_expandida{
     display: none; 
@@ -387,7 +401,7 @@ body {
   }
   #portada_section_reducida{
     display: block !important;
-    height: 250px;
+   // height: 250px;
   }
   #portada_reducida{     
       display: block !important;
@@ -409,6 +423,13 @@ body {
           width: 180px;
       }
   } 
+
+  .page-footer{
+    margin-top: 5%;    
+    .footer-body{
+      padding: 8% 2% 8% 12%;      
+    }
+  }  
 }
 
 .intro  h2{
@@ -417,6 +438,20 @@ body {
 }
 /* Landscape phones and down  */
 @media (max-width:  575.98px) {
+  .section-team{
+    h2 {     
+      padding-bottom: 10%  !important;
+    }
+  }
+  
+  .section_service_website{
+    .service_website{
+        h3 {
+          font-size: 1rem !important;
+          line-height: 2rem  !important;
+       }
+    }
+  }
   
   nav .menu_collapsed{
       width: 100%;
@@ -427,15 +462,11 @@ body {
   
   .section_description{
       text-align: center;
-      padding: 4%;      
+      padding: 4%;  
+         
   }
 
-  .page-footer{
-    margin-top: 5%;
-    .footer-body{
-      padding: 8%;      
-    }
-  }  
+  
   .container-service-card{
     .service-card{
       height: 410px;
@@ -451,5 +482,137 @@ body {
     backface-visibility: visible;
     -webkit-transform: none !important;
     transform: none !important;
+  }
+}
+
+
+.section-team{
+    padding: 10% 0% 10% 0%;    
+    background-color: $color_principal;
+
+    h2 {
+      color: $font_color_light;
+      padding-bottom: 2%;
+    }
+    figure {
+      margin: 0;
+    }
+    
+
+  /* Flip card */
+  .card-flip {
+    background: none;
+    border: none;
+    padding: 0;   
+    margin-bottom: 25%;
+      min-height: 200px; 
+
+    .card {
+      backface-visibility: hidden;
+      transition: transform 300ms;
+      transition-timing-function: linear;
+      width: 100%;
+      height: 100%;
+      margin: 0;  
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .card:first-of-type {
+      tranform: rotateY(0deg);
+    }
+
+    .card:last-of-type {
+      transform: rotateY(180deg);
+      // Put this in face with the larger content
+      position: absolute;
+      top: 0;
+      display: flex;
+    }
+
+    &:hover {
+      .card:first-of-type  {
+          transform: rotateY(-180deg);
+      }
+      .card:last-of-type {
+          transform: rotateY(0deg);
+      }
+    }
+  }
+
+  .card-team-text {
+    position: relative;
+      margin-top: 0px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      h3{
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: $font_color_title;
+      }
+
+      h4{
+        font-size: 0.9rem;        
+      }
+  }
+  .card-team {
+    margin-bottom: 20%;
+    min-height: 210px;
+  }
+  .card-team  img {
+    position: absolute;
+    top: -50px;
+    left: 50%;   
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 120px;
+  }
+}
+
+//Decoracion de li en la lista de servicios
+.section-services-details {  
+  padding: 8% 0% 8% 0%;
+  img {
+    padding: 4% 0% 4% 0%;
+  }
+  ul {
+    list-style: none; /* Remove default bullets */
+    li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color:$font_color_title; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+      font-size: 2rem;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $font_color_title;
+      line-height: 2rem;    
+    }    
+  } 
+}
+
+.section_service_website{
+    background-color: $color_secundary;
+    padding: 3% 0% 3% 0%;
+  
+  .service_website{
+    padding: 5% 5% 5% 5%;
+
+    opacity: 0.9;
+    text-align: center;
+      h3 {
+        color: $font_color_light;
+        line-height: 3rem;
+        font-size: 1.3rem;
+        font-weight: bold; 
+        font-style: italic;     
+      }
   }
 }
